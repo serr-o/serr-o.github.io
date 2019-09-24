@@ -1,0 +1,213 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+html,
+body {
+  position: fixed;
+  overflow: hidden;
+}
+
+@font-face {
+    font-family: light;
+    src: url(fontes/neuelight.otf);
+}
+
+@font-face {
+    font-family: medium;
+    src: url(fontes/neuemedium.otf);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    font-family:serif;
+    color: black;
+    font-family: light;
+    
+}
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+
+/* LADEX */
+
+#side_bar {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 20vh;
+    height: 100vh;
+    z-index: 0; 
+    justify-content: space-between;
+}
+#background_side{
+    position:absolute; 
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background: radial-gradient(#000000, #ffffff);
+    background-size: 200% 500%;
+    animation: cor 30s ease infinite;
+    filter: blur(8px);
+}
+
+@keyframes cor {
+    0%{background-position:58% 0%}
+    50%{background-position:43% 100%}
+    100%{background-position:58% 0%}
+}
+
+#about {
+    color: white;
+    font-size: 6vh;
+    mix-blend-mode: exclusion;
+    width: 100%;   
+}
+
+#nome {
+    display: flex;
+    width: 20vh;
+    mix-blend-mode: exclusion;
+    
+}
+
+#contact {
+    color: white;
+    font-size: 4.5vh;
+    overflow-wrap: break-word;
+    width: 100%;
+    mix-blend-mode: exclusion;
+}
+
+#nome:hover, #about:hover, #contact:hover {
+    mix-blend-mode: lighten;
+}
+
+/* PARTE PRINCIPAL */
+
+#main {
+    position: relative;
+    width: 89vw;
+    height: 100vh;
+    z-index: 5;
+    margin-left: 20px;
+}
+
+/*    DIVISÕES    */
+
+.quadrante {
+    font-size: 36px;
+    
+}
+
+.quadrante:hover {
+    text-decoration: underline;
+
+}
+
+#qtopleft {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: left;
+    width: auto;
+    
+}
+
+#qtopright {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: right;
+    width: auto;
+}
+
+#qmedleft {
+    position: absolute;
+    top: 50vh;
+    left: 5px;    
+}
+
+#qmedright {
+    position: absolute;
+    top: 50vh;
+    right: -80px;
+    transform: rotate(90deg);
+    text-align: center;
+}
+
+
+#qbotleft {
+    position: absolute;
+    text-align: left;
+    bottom: 5px;
+    left: 5px;
+    width: auto;
+}
+
+#qbotright {
+    position: absolute;
+    text-align: right;
+    bottom:5px;
+    right: 5px;
+    width: auto;
+    
+}
+
+
+/*    ICONES    */
+
+.thumbnail {
+
+}
+
+.thumbnail:hover {
+    animation-name: swoop;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-out;
+    animation-duration: 0.8s;
+}
+
+@keyframes swoop {
+    0% {opacity: 1;}
+    10% {opacity: 0;}
+    75% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+#cast00 {
+    position: absolute;
+    height: 80px;
+    width: auto;
+    top: 50%;
+    left: 5%;   
+}
+
+#cast2050 {
+    position: absolute;
+    height: 120px;
+    width: auto;
+    top: 5%;
+    left: 40%;   
+}
+
+#towards {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 150px;
+    transform: translate(-50%, -50%);
+    width: auto;
+}
+
+
+
+
