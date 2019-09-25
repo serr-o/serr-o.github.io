@@ -192,7 +192,7 @@ a:hover, a:visited, a:link, a:active {
 
 
 
-.highlight {
+.highlight:active, .highlight:hover, .highlight:link, .highlight:visited {
     color: #00ff00;
     cursor: pointer;
     
@@ -200,13 +200,14 @@ a:hover, a:visited, a:link, a:active {
 
 .highlight:hover {
     text-decoration: underline;
-    color: #00ff00;
     
 }
 
 
 .related {
-    height: 150px;
+    display: flex;
+    height: 100px;
+    padding-top: 75px;
     width: 100%;
     text-align: right;
 }
@@ -440,10 +441,9 @@ body {
     display: flex;
     position: absolute;
     flex-direction: column;
-    
     width: 100vw;
     left:0px;
-    top: 80px;
+    top: 50px;
     padding-left: 0px;
     padding-right: 0px;
     margin-right: 0;
@@ -499,6 +499,15 @@ body {
     top: 0;
     width: 100%;
     height: auto;
+}
+
+.related {
+    display: flex;
+    height:15vw;
+    padding-top: 5vw;
+    width: 100%;
+    margin-left: 5px;
+    text-align: right;
 }
 
 
