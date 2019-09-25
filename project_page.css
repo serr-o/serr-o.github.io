@@ -26,9 +26,9 @@ body {
     flex-direction: row;
     font-family:serif;
     color: black;
-    font-family: light;    
+    font-family: light;
+    overflow: auto;
 }
-
 
 
 a:hover, a:visited, a:link, a:active {
