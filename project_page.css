@@ -299,6 +299,15 @@ body {
     width: 100%;
 
 }
+    
+.instalacao {
+    position:relative;
+    width: 100%;
+    top: auto;
+    left: auto;    
+}
+
+
           
     
 }
@@ -493,12 +502,7 @@ body {
 }
     
 
-.instalacao {
-    position: absolute;
-    height: 50px;
-    width: 50px;
-    background-color: red;
-}
+
 
 .related {
     display: flex;
