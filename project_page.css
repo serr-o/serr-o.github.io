@@ -397,9 +397,10 @@ body {
     width: 15vw;
     border-radius: 5px 5px 0px 0px; 
     align-content: flex-end;
-  /*  animation: rightape 0.5s;
+    animation: rightape 0.5s;
+    animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(,1,0.9,0.8);
-    animation-fill-mode: forwards;*/
+    animation-fill-mode: forwards;
 }
 .date_mm {
     font-size: 2.5vw;
@@ -426,10 +427,9 @@ body {
     border-radius: 5px 5px 0px 0px; 
     align-content: flex-end;
     animation: rightape 0.5s;
+    animation-iteration-count: 1;
     animation-timing-function: cubic-bezier(,1,0.9,0.8);
     animation-fill-mode: forwards;
-   
-    
 }
 
 @keyframes rightape {
@@ -447,9 +447,7 @@ body {
     padding-left: 0px;
     padding-right: 0px;
     margin-right: 0;
-    animation: ape 0.5s;
-    animation-timing-function: cubic-bezier(,1,0.9,0.8);
-    transition: left 0.5s;
+
 }
 
 
@@ -494,11 +492,12 @@ body {
     margin-right: 0;
 }
     
+
 .instalacao {
     position: absolute;
-    top: 0;
-    width: 100%;
-    height: auto;
+    height: 50px;
+    width: 50px;
+    background-color: red;
 }
 
 .related {
