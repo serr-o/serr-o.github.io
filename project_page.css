@@ -130,6 +130,7 @@ a:hover, a:visited, a:link, a:active {
     position: absolute;
     flex-direction: column;
     height: auto;
+    width: 80%;
     max-width: 1300px;
     padding-left: 50px;
     left:50px;
