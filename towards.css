@@ -27,7 +27,6 @@ body {
     font-family:serif;
     color: black;
     font-family: light;
-
 }
 
 
@@ -170,12 +169,12 @@ a:hover, a:visited, a:link, a:active {
     margin-top: 20px;
     font-size: 28px;
     margin-bottom: 40px;
-    max-width: 1300px;
+    max-width: 1200px;
 }
 
-.row {
+.column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-content: space-between;
 }
 
@@ -183,9 +182,73 @@ a:hover, a:visited, a:link, a:active {
     display: flex;
     position: relative;
     width: 68%;
-    height: 100%;
     overflow: hidden;   
-    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    
+}
+
+
+/* SLIDER */
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.inquiry-container {
+  width: 30%;
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+}
+
+.mp-container {
+  width: 30%;
+  position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  box-shadow: 2px 2px 25px 0px rgba(0,0,0,0.75);
+}
+
+/* Next & previous buttons */
+
+.setas_cont {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: relative;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 48px;
+  transition: 0.5s;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  color: rgba(0,0,0,0.8);
 }
 
 
@@ -281,69 +344,7 @@ a:hover, a:visited, a:link, a:active {
     
 }
 
-/* SLIDER */
 
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.slideshow-container {
-  width: 30%;
-  position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  box-shadow: 2px 2px 25px 0px rgba(0,0,0,0.75);
-}
-
-/* Next & previous buttons */
-
-.setas_cont {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin: auto;
-}
-
-
-.prev, .next {
-  cursor: pointer;
-  position: relative;
-  width: auto;
-  color: black;
-  font-weight: bold;
-  font-size: 48px;
-  transition: 0.5s;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
 
 
 
@@ -525,7 +526,7 @@ body {
     display: flex;
     position: relative;
     height: auto;
-    content:url(icones/towardsvertical.jpg);
+    content:url(towards/towardsvertical.jpg);
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;

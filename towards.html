@@ -32,20 +32,20 @@ In this society there’s no place for feelings like guilt, because guilt is a c
 Those feelings are counterproductive to the advancement of humanity, this psychological evolution also altered human biology: individuals developed a negative feedback mechanism which, by generating pain, stops those feelings immediately. If it persists, this mechanism can lead to death.<br>Each human is a unit. No one is unreplaceable.
 Would the world worry about you?
         </div>
-<div class="row">
+<div class="column">
             
 
-    <div class="slideshow-container">
+    <div class="inquiry-container">
           <div class="mySlides">
-            <img src="towards/inquiry/inquiry1.jpg" style="width:100%">
+            <img class="lazy" src="vetores/img.svg" data-src="towards/inquiry/inquiry1.jpg" style="width:100%">
             </div>
 
           <div class="mySlides">
-            <img src="towards/inquiry/inquiry2.jpg" style="width:100%">
+            <img class="lazy" src="vetores/img.svg" data-src="towards/inquiry/inquiry4.jpg" style="width:100%">
           </div>
 
           <div class="mySlides">
-            <img src="towards/inquiry/inquiry3.jpg" style="width:100%">
+            <img class="lazy" src="vetores/img.svg" data-src="towards/inquiry/inquiry3.jpg" style="width:100%">
           </div>
 
             <div class="setas_cont">
@@ -54,12 +54,18 @@ Would the world worry about you?
         </div>
 
     </div>
+
     
-    <img class="spread" src="https://i.imgur.com/vcB6t80.jpg">
 
 
+    <img class="spread lazy" src="vetores/img.svg" data-src="https://i.imgur.com/JiPuAjp.jpg">
+    <img class="spread lazy lona" src="vetores/img.svg" data-src="https://i.imgur.com/MAa3EK8.jpg">
+    <img class="spread lazy inquiries" src="vetores/img.svg" data-src="https://i.imgur.com/daRW7uv.jpg">
+    <img class="spread lazy peak" src="vetores/img.svg" data-src="https://i.imgur.com/2c6Rf7C.jpg">
+    <img class="spread lazy darkroom" src="vetores/img.svg" data-src="https://i.imgur.com/5HuMtNt.jpg">
 
-</div>    
+</div>
+    
   
         </div>
     
@@ -75,8 +81,9 @@ Would the world worry about you?
         $('.lazy').Lazy({
             // your configuration goes here
             scrollDirection: 'vertical',
+            delay: 600,
             effect: 'fadeIn',
-            effectTime: 500
+            effectTime: 250
         });
     });
         
