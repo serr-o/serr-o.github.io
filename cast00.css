@@ -27,7 +27,6 @@ body {
     font-family:serif;
     color: black;
     font-family: light;
-
 }
 
 
@@ -500,6 +499,7 @@ body {
     overflow: hidden;
     margin-left: 0;
     margin-right: 0;
+    opacity: 1;
 }
     
 

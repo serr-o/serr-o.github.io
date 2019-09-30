@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SERRA</title>
+    <link rel="stylesheet" href="towards.css">
+    <link rel="icon" type="image/png" href="#"> 
+  
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
+
+</head>
+
+
+<body>
+        <div id="side_bar">
+            <div id="background_side"></div>
+            <a href="about.html"><div id="about">ABOUT</div></a>
+            <div id="contact"><span class="trans">+91 033 59 64 hello@<br>serra.com</span><span class="notrans">+91 033 59 64 hello@serra.com</span></div>
+            <a href="index.html"><img id="nome" src="vetores/serra.svg"></a>
+        </div>
+        <div id="main">
+            <img class="thumbnail" src="towards/towardsextenso.jpg">
+            <div class="intro">Towards the Omega Point is a speculative design project that pictures a scenario where humankind evolved to collectivize thought. In this alternative reality, humanity has already surpassed the state of primal individualism: human beings consider the collective wellbeing and the ultimate goal of the species in every thought, action, movement and decision they make.<br>
+The advancement of humanity is headed towards the Omega Point—a moment of convergence of every mind and every body.<br>
+In this society there’s no place for feelings like guilt, because guilt is a consequence of an individualistic behaviour: feeling like you’ve subjugated another human being, putting yourself above them, even if unconsciously.<br>
+Those feelings are counterproductive to the advancement of humanity, this psychological evolution also altered human biology: individuals developed a negative feedback mechanism which, by generating pain, stops those feelings immediately. If it persists, this mechanism can lead to death.<br>Each human is a unit. No one is unreplaceable.
+Would the world worry about you?
+        </div>
+<div class="row">
+            
+
+    <div class="slideshow-container">
+          <div class="mySlides">
+            <img src="towards/inquiry/inquiry1.jpg" style="width:100%">
+            </div>
+
+          <div class="mySlides">
+            <img src="towards/inquiry/inquiry2.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides">
+            <img src="towards/inquiry/inquiry3.jpg" style="width:100%">
+          </div>
+
+            <div class="setas_cont">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+    </div>
+    
+    <img class="spread" src="https://i.imgur.com/vcB6t80.jpg">
+
+
+
+</div>    
+  
+        </div>
+    
+    
+        <div class="date"><span class="date_mm">MAY 2019</span></div>
+    <div class="colab"><span class="date_mm">COLLABORATION WITH<br><a href="#">INÊS PINHEIRO</a> & <a class="afonsoeines" href="https://www.behance.net/afonsodematos">AFONSO DE MATOS</a></span></div>
+</body>
+
+    <script>
+
+
+        $(function() {
+        $('.lazy').Lazy({
+            // your configuration goes here
+            scrollDirection: 'vertical',
+            effect: 'fadeIn',
+            effectTime: 500
+        });
+    });
+        
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    
+    
+    
+</html>
