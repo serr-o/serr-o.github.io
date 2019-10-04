@@ -26,47 +26,34 @@
         </div>
         <div id="main">
             <img class="thumbnail" src="towards/towardsextenso.jpg">
-            <div class="intro">Towards the Omega Point is a speculative design project that pictures a scenario where humankind evolved to collectivize thought. In this alternative reality, humanity has already surpassed the state of primal individualism: human beings consider the collective wellbeing and the ultimate goal of the species in every thought, action, movement and decision they make.<br>
+            <div class="intro"><a href="https://towardstheomegapoint.github.io/" id="pwebsite">*Project Website*</a><br>Towards the Omega Point is a speculative design project that pictures a scenario where humankind evolved to collectivize thought. In this alternative reality, humanity has already surpassed the state of primal individualism: human beings consider the collective wellbeing and the ultimate goal of the species in every thought, action, movement and decision they make.<br>
 The advancement of humanity is headed towards the Omega Point—a moment of convergence of every mind and every body.<br>
 In this society there’s no place for feelings like guilt, because guilt is a consequence of an individualistic behaviour: feeling like you’ve subjugated another human being, putting yourself above them, even if unconsciously.<br>
 Those feelings are counterproductive to the advancement of humanity, this psychological evolution also altered human biology: individuals developed a negative feedback mechanism which, by generating pain, stops those feelings immediately. If it persists, this mechanism can lead to death.<br>Each human is a unit. No one is unreplaceable.
 Would the world worry about you?
         </div>
-<div class="column">
-            
-
-    <div class="inquiry-container">
-          <div class="mySlides">
-            <img class="lazy" src="vetores/img.svg" data-src="towards/inquiry/inquiry1.jpg" style="width:100%">
-            </div>
-
-          <div class="mySlides">
-            <img class="lazy" src="vetores/img.svg" data-src="towards/inquiry/inquiry4.jpg" style="width:100%">
-          </div>
-
-          <div class="mySlides">
-            <img class="lazy" src="vetores/img.svg" data-src="towards/inquiry/inquiry3.jpg" style="width:100%">
-          </div>
-
-            <div class="setas_cont">
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<div class="contentor_colunas">
+    <div class="column1">
+        <div id="mp_contentor">
+            <img id="mp_spread" class="lazy" src="vetores/img.svg" data-src="towards/manual/0.jpg">
+            <div id="nav_cont">
+                    <a id="nav_button" onclick="prevPic()" src="images/setaesquerda.svg">&#10094;</a>
+                    <a id="nav_button" onclick="nextPic()" src="images/setadireita.svg">&#10095;</a>
+                </div>
         </div>
-
+    <p class="legenda"><br>Some spreads of the Production Manual with the entire process, from the first ideas and concepts to every object produced. Full documentation <a id="linknotexto" href="https://towardstheomegapoint.github.io/process.html">here</a></p>
     </div>
-
     
-
-
-    <img class="spread lazy" src="vetores/img.svg" data-src="https://i.imgur.com/JiPuAjp.jpg">
-    <img class="spread lazy lona" src="vetores/img.svg" data-src="https://i.imgur.com/MAa3EK8.jpg">
-    <img class="spread lazy inquiries" src="vetores/img.svg" data-src="https://i.imgur.com/daRW7uv.jpg">
-    <img class="spread lazy peak" src="vetores/img.svg" data-src="https://i.imgur.com/2c6Rf7C.jpg">
-    <img class="spread lazy darkroom" src="vetores/img.svg" data-src="https://i.imgur.com/5HuMtNt.jpg">
-
+    <div class="column2">
+        <p class="legenda">These are images of the Project Room, one of the main embodiements of this fiction.</p>
+        <img class="spread lazy" src="vetores/img.svg" data-src="https://i.imgur.com/JiPuAjp.jpg">
+        <img class="spread lazy lona" src="vetores/img.svg" data-src="https://i.imgur.com/MAa3EK8.jpg">
+        <img class="spread lazy inquiries" src="vetores/img.svg" data-src="https://i.imgur.com/daRW7uv.jpg">
+        <img class="spread lazy peak" src="vetores/img.svg" data-src="https://i.imgur.com/2c6Rf7C.jpg">
+        <img class="spread lazy darkroom" src="vetores/img.svg" data-src="https://i.imgur.com/5HuMtNt.jpg">
+    </div>
+    
 </div>
-    
-  
         </div>
     
     
@@ -76,45 +63,47 @@ Would the world worry about you?
 
     <script>
 
-
+    /* LAZY */
         $(function() {
         $('.lazy').Lazy({
             // your configuration goes here
             scrollDirection: 'vertical',
-            delay: 600,
+            delay: 350,
             effect: 'fadeIn',
-            effectTime: 250
+            effectTime: 000
         });
     });
         
-        var slideIndex = 1;
-showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+    /* SLIDER */
+        
+        //        VARIAVEIS QUE TENS DE MUDAR
+        var target = document.getElementById("mp_spread");
+        var numerodeimagens = 30;
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+//      PARTE QUE NAO PRECISAS DE MEXER        
+        var counter = 0;
+        var img = new Array(numerodeimagens);
+        for (var i = 0; i < numerodeimagens; i++) {
+            img[i] = new Image();
+            img[i].src = 'towards/' + 'manual/' + i + '.jpg';
+        }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
+        function nextPic() {
+            counter += 1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
+        
+        function prevPic() {
+            counter += -1;
+            if (counter > img.length - 1) {
+                counter = 0;
+            }
+            target.src = img[counter].src;
+        }
 </script>
 
     

@@ -33,6 +33,7 @@ body {
 a:hover, a:visited, a:link, a:active {
     text-decoration: none;
     color: white;
+    
 }
 
 
@@ -163,6 +164,14 @@ a:hover, a:visited, a:link, a:active {
     background-image: linear-gradient(90deg, #000000, #ffffff);
 }
 
+#pwebsite {
+    text-decoration:underline;
+    color: black;
+}
+#pwebsite:hover {
+    color: dimgrey;
+}
+
 .intro {
     width: 100%;
     height: auto;
@@ -172,85 +181,86 @@ a:hover, a:visited, a:link, a:active {
     max-width: 1200px;
 }
 
-.column {
+.contentor_colunas {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
+    flex-direction: row;
 }
 
-.spread {
+.column1, .column2 {
     display: flex;
-    position: relative;
-    width: 68%;
-    overflow: hidden;   
-    margin-right: auto;
-    left: 0;
+    flex-direction: column;
+    width: 48%;
+}
+
+.legenda {
+    font-size: 18px;
+    margin-top: 0;
+}
+#linknotexto {
+    text-decoration: underline;
+    color: black;
+}
+#linknotexto:hover {
+    text-decoration: none;
+    
     
 }
 
 
-/* SLIDER */
-
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
-.inquiry-container {
-  width: 30%;
-  position: absolute;
+/*
+.column1 {
+     background-color: red;
+}
+.column2 {
+    background-color: blue;
+}*/
+.spread {
     display: flex;
-    flex-direction: column;
-    right: 0;
+    position: relative;
+    width: 100%;
+    overflow: hidden;   
+    margin-left:auto;
+    
 }
 
-.mp-container {
-  width: 30%;
-  position: absolute;
+#mp_contentor {
+    position: relative;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    right: 0;
+    flex-direction: row;
+    margin-right: auto;
+
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  box-shadow: 2px 2px 25px 0px rgba(0,0,0,0.75);
+#mp_spread {
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin-bottom: 0;
+   /* box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.2);*/
 }
 
-/* Next & previous buttons */
-
-.setas_cont {
+#nav_cont {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 1%;
+    width: 4%;
+} 
+    
+#nav_button {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    width: 50%;
-    margin: auto;
+    transition-duration: 0.5s;
+    font-size: 48px;
+    cursor: pointer;
+    pointer-events: all;
 }
 
-
-.prev, .next {
-  cursor: pointer;
-  position: relative;
-  width: auto;
-  color: black;
-  font-weight: bold;
-  font-size: 48px;
-  transition: 0.5s;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+#nav_button:hover {
+    opacity: 0.8;
+    color: black;
 }
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  color: rgba(0,0,0,0.8);
-}
-
 
 
 
