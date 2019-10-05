@@ -33,24 +33,36 @@ Those feelings are counterproductive to the advancement of humanity, this psycho
 Would the world worry about you?
         </div>
 <div class="contentor_colunas">
+    
+    <div class="column2">
+        <img class="spread lazy" src="vetores/img.svg" data-src="towards/1.jpg">
+        <img class="spread lazy lona" src="vetores/img.svg" data-src="towards/2.jpg">
+        <img class="spread lazy inquiries" src="vetores/img.svg" data-src="towards/3.jpg">
+        <img class="spread lazy peak" src="vetores/img.svg" data-src="towards/4.jpg">
+        <img class="spread lazy darkroom" src="vetores/img.svg" data-src="towards/5.jpg">
+        <img class="spread lazy darkroom" src="vetores/img.svg" data-src="towards/6.jpg">
+    </div>
+    
     <div class="column1">
-        <div id="mp_contentor">
+        <p class="legenda top"><br>Some spreads of the Production Manual with the entire process, from the first ideas and concepts to every object produced. Full documentation <a id="linknotexto" href="https://towardstheomegapoint.github.io/process.html">here</a></p>
+ 
+           <div id="mp_contentor">
             <img id="mp_spread" class="lazy" src="vetores/img.svg" data-src="towards/manual/0.jpg">
             <div id="nav_cont">
                     <a id="nav_button" onclick="prevPic()" src="images/setaesquerda.svg">&#10094;</a>
                     <a id="nav_button" onclick="nextPic()" src="images/setadireita.svg">&#10095;</a>
                 </div>
         </div>
-    <p class="legenda"><br>Some spreads of the Production Manual with the entire process, from the first ideas and concepts to every object produced. Full documentation <a id="linknotexto" href="https://towardstheomegapoint.github.io/process.html">here</a></p>
+   
+        <p class="legenda bottom"><br>Some spreads of the Production Manual with the entire process, from the first ideas and concepts to every object produced. Full documentation <a id="linknotexto" href="https://towardstheomegapoint.github.io/process.html">here</a></p>
+        
+    <p class="legenda leginq top"><br>Samples of the "Collective Safety Inquiries" displayed inside of the Project Room.</p>
+        
+    <div id="inq_contentor">
+            <img id="inq_spread" class="lazy" src="vetores/img.svg" data-src="towards/inquiry/0.gif">   
     </div>
-    
-    <div class="column2">
-        <p class="legenda">These are images of the Project Room, one of the main embodiements of this fiction.</p>
-        <img class="spread lazy" src="vetores/img.svg" data-src="https://i.imgur.com/JiPuAjp.jpg">
-        <img class="spread lazy lona" src="vetores/img.svg" data-src="https://i.imgur.com/MAa3EK8.jpg">
-        <img class="spread lazy inquiries" src="vetores/img.svg" data-src="https://i.imgur.com/daRW7uv.jpg">
-        <img class="spread lazy peak" src="vetores/img.svg" data-src="https://i.imgur.com/2c6Rf7C.jpg">
-        <img class="spread lazy darkroom" src="vetores/img.svg" data-src="https://i.imgur.com/5HuMtNt.jpg">
+        <p class="legenda leginq bottom"><br>Samples of the "Collective Safety Inquiries" displayed inside of the Project Room.</p>
+
     </div>
     
 </div>
@@ -74,12 +86,13 @@ Would the world worry about you?
         });
     });
         
+    
 
     /* SLIDER */
         
         //        VARIAVEIS QUE TENS DE MUDAR
         var target = document.getElementById("mp_spread");
-        var numerodeimagens = 30;
+        var numerodeimagens = 15;
 
 //      PARTE QUE NAO PRECISAS DE MEXER        
         var counter = 0;
@@ -90,6 +103,7 @@ Would the world worry about you?
         }
 
         function nextPic() {
+            
             counter += 1;
             if (counter > img.length - 1) {
                 counter = 0;
@@ -98,12 +112,16 @@ Would the world worry about you?
         }
         
         function prevPic() {
+            
             counter += -1;
             if (counter > img.length - 1) {
                 counter = 0;
             }
             target.src = img[counter].src;
         }
+        
+        
+       
 </script>
 
     

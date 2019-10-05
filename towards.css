@@ -149,10 +149,10 @@ a:hover, a:visited, a:link, a:active {
 
 .thumbnail {
     display: flex;
-    width: 80vw;
+    width: 78vw;
     max-width: 1200px;
     height: auto;
-    margin-left: -10px;
+    margin-left: 0;
     margin-top: 50px;
     margin-bottom: 20px;
 }
@@ -173,9 +173,9 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .intro {
-    width: 100%;
+    width: 90%;
     height: auto;
-    margin-top: 20px;
+    margin-top: 50px;
     font-size: 28px;
     margin-bottom: 40px;
     max-width: 1200px;
@@ -185,17 +185,30 @@ a:hover, a:visited, a:link, a:active {
     position: relative;
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
 }
 
 .column1, .column2 {
     display: flex;
     flex-direction: column;
-    width: 48%;
+    width: 45%;
+}
+
+.column1 {
+    margin-left: 30px;
 }
 
 .legenda {
     font-size: 18px;
     margin-top: 0;
+}
+
+.top{
+    display: none;
+}
+
+.leginq{
+    width: 80%;
 }
 #linknotexto {
     text-decoration: underline;
@@ -208,13 +221,6 @@ a:hover, a:visited, a:link, a:active {
 }
 
 
-/*
-.column1 {
-     background-color: red;
-}
-.column2 {
-    background-color: blue;
-}*/
 .spread {
     display: flex;
     position: relative;
@@ -241,7 +247,29 @@ a:hover, a:visited, a:link, a:active {
    /* box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.2);*/
 }
 
+#inq_contentor {
+    position: relative;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-top: 25px;
+
+}
+
+#inq_spread {
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin-bottom: 0;
+    box-shadow: 0px 0px 10px 15px rgba(0,0,0,0.2);
+    
+}
+   
+
 #nav_cont {
+    display: flex;
+    flex-direction: column;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 1%;
@@ -360,32 +388,51 @@ a:hover, a:visited, a:link, a:active {
 
 
 
+          
 @media screen and (max-width: 1100px) {
-    
-body {
-   
+.intro {
+    width: 85%;
+    letter-spacing: 0.2px;
+    height: auto;
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
 }
     
 
+
+@media screen and (max-width: 780px) {
+    
+    
+    
+body {
+    flex-direction: column;
+}
+    
 .row {
     flex-direction: column;
 
 }
 
 
-          
-    
-}
-
 
 /* MEDIA QUARIES */
 
-@media screen and (max-width: 780px) {
-
-
-body {
-    flex-direction: column;
+    
+    #nome{
+    display: flex;
+    position: relative;
+    height:6vw;
+    width: auto;
+	content:url(vetores/serraho.svg);
+    right: 5px;
+    top: 4px;
+    margin: auto;
+    float: right;
 }
+
+
     
 #side_bar {
     display: flex;
@@ -428,17 +475,7 @@ body {
     width: 30vw;
 }
   
-#nome{
-    display: flex;
-    position: relative;
-    height:6vw;
-    width: auto;
-	content:url(vetores/serraho.svg);
-    right: 5px;
-    top: 4px;
-    margin: auto;
-    float: right;
-}
+
     
 #side_bar:hover {
     width: 100vw;
@@ -553,13 +590,115 @@ body {
     margin-bottom: 20px;
     margin-left: 17.5px;
 }
-
-.row {
+    
+.contentor_colunas {
+    position: relative;
     display: flex;
     flex-direction: column;
-    width: 100vw;
-  
+    margin-top: 20px;
+    width: 100%;
 }
+
+.column1, .column2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.column1 {
+    margin-left: 0px;
+}
+    
+
+
+
+
+#mp_contentor {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0;
+    overflow: hidden;
+
+}
+    
+
+
+#mp_spread {
+    position: relative;
+    width: 115%;
+    height: auto;
+    margin-bottom: 0;
+    margin-left: -7.5%;
+    overflow: hidden;
+   /* box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.2);*/
+}
+
+#inq_contentor {
+    position: relative;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 60px;
+
+}
+
+#inq_spread {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    box-shadow: 0px 0px 10px 15px rgba(0,0,0,0.2);
+    
+}
+
+.legenda {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+    
+.bottom {
+    display: none;
+}
+    
+.top {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+    
+#nav_cont {
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    width: 100%;
+} 
+    
+#nav_button {
+    position: relative;
+    display: flex;
+    transition-duration: 0.5s;
+    font-size: 48px;
+    cursor: pointer;
+    pointer-events: all;
+    width: 10%;
+}
+
+#nav_button:hover {
+    opacity: 0.8;
+    color: black;
+}
+    
+
 
 .spread {
     display: flex;
@@ -573,14 +712,6 @@ body {
 
 
 
-.related {
-    display: flex;
-    height:15vw;
-    padding-top: 5vw;
-    width: 100%;
-    margin-left: 5px;
-    text-align: right;
-}
 
 
 
