@@ -398,6 +398,49 @@ a:hover, a:visited, a:link, a:active {
     font-size: 24px;
     margin-bottom: 20px;
 }
+    
+    
+.date {
+    font-size: 18px;
+    top: 60px;
+    right: -100px;
+    height: 50px;
+    width: 80px;
+    border-radius: 0px 0px 5px 5px; 
+    align-content: flex-end;
+    animation: rightape 0.5s;
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+    .date_mm {
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.colab {
+    font-size: 15px;
+    transform: rotate(90deg);
+    color: white;
+    background-color: black;
+    top: 500px;
+    right: -260px;
+    height: 45px;
+    width: 450px;
+    border-radius: 0px 0px 5px 5px; 
+    align-content: flex-end;
+    animation: rightape2 0.5s;
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    
+}
+    
+
 }
     
 
