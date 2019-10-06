@@ -149,9 +149,9 @@ a:hover, a:visited, a:link, a:active {
 
 .thumbnail {
     display: flex;
-    margin-left: -10px;
-    font-size: 180px;
-    
+    margin-top: 20px;
+    width: 40%;
+    margin-bottom: -20px;
 }
 
 .line {
@@ -479,8 +479,9 @@ body {
 
 
 .thumbnail {
-    font-size: 72px;
+    width: 50%;
     margin-left: 17.5px;
+    margin-bottom: 0px;
     
 }
 
