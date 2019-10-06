@@ -490,26 +490,30 @@ body {
     height: auto;
     margin-top: 20px;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-left: 17.5px;
 }
 
-.row {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-  
-}
 
-.esq, .dir {
+    
+.esq {
     display: flex;
     width: 100%;
-    overflow: hidden;
-    margin-left: 0;
-    margin-right: 0;
-    opacity: 1;
+    margin-top: 20px;
 }
-    
+
+
+.dir {
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 50px;
+     box-shadow: 0px 0px 10px 15px rgba(0,0,0,0.2);
+}
+
 
 
 
