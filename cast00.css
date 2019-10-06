@@ -170,24 +170,48 @@ a:hover, a:visited, a:link, a:active {
     margin-bottom: 20px;
 }
 
-.row {
+
+.contentor_colunas {
+    position: relative;
     display: flex;
     flex-direction: row;
+    margin-top: 50px;
 }
+
+.column1, .column2 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
 
 .spread {
     display: flex;
     position: relative;
-    width: 50%;
+    width: 100%;
     overflow: hidden;
+    flex-direction: column;
     
 }
 
 .instalacao {
-    position: absolute;
-    top:0;
-    left: -50%;
-    width: 275%;
+    height: auto;
+    width: 100%;
+    
+}
+
+.legenda {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 22px;
+}
+
+.soundtrack {
+    width: 100%;
+    margin-top: 50px;
 }
 
 
@@ -290,9 +314,22 @@ body {
 }
     
 
-.row {
+.contentor_colunas {
+    position: relative;
+    display: flex;
     flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+}
 
+.column1, .column2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.column1 {
+    margin-left: 0px;
 }
 
 .spread {
@@ -486,12 +523,9 @@ body {
     margin-left: 17.5px;
 }
 
-.row {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-  
-}
+    
+
+
 
 .spread {
     display: flex;
