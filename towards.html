@@ -43,7 +43,10 @@ Would the world worry about you?
         <img class="spread lazy darkroom" src="vetores/img.svg" data-src="towards/6.jpg">
     </div>
     
-    <div class="column1">
+    <div class="column1"> 
+        
+<!-- MANUAL DE PRODUÇÃO --> 
+        
         <p class="legenda top"><br>Some spreads of the Production Manual with the entire process, from the first ideas and concepts to every object produced. Full documentation <a id="linknotexto" href="https://towardstheomegapoint.github.io/process.html">here</a></p>
  
            <div id="mp_contentor">
@@ -58,10 +61,28 @@ Would the world worry about you?
         
     <p class="legenda leginq top"><br>Samples of the "Collective Safety Inquiries" displayed inside of the Project Room.</p>
         
+ <!-- INQUIRIES -->   
+        
     <div id="inq_contentor">
             <img id="inq_spread" class="lazy" src="towards/inquiry/0.gif">   
         </div>
         <p class="legenda leginq bottom"><br>Samples of the "Collective Safety Inquiries" displayed inside of the Project Room.</p>
+        
+<!-- CODEX -->
+        
+        <p class="legenda top"><br>Compendium of knowledge that sat inside of the dark room.<a id="linknotexto" href="https://towardstheomegapoint.github.io/process.html">here</a></p>
+ 
+           <div id="codex_contentor">
+            <img id="codex_spread" class="lazy" src="vetores/img.svg" data-src="towards/codex/0.jpg">
+            <div id="nav_cont">
+                    <a id="nav_button" onclick="prevPic()" src="images/setaesquerda.svg">&#10094;</a>
+                    <a id="nav_button" onclick="nextPic()" src="images/setadireita.svg">&#10095;</a>
+                </div>
+        </div>
+   
+        <p class="legenda bottom"><br>Compendium of knowledge that sat inside of the dark room. <a id="linknotexto" href="https://towardstheomegapoint.github.io/process.html">here</a></p>
+        
+        
 
     </div>
     
@@ -88,37 +109,38 @@ Would the world worry about you?
         
     
 
+    
     /* SLIDER */
-        
-        //        VARIAVEIS QUE TENS DE MUDAR
-        var target = document.getElementById("mp_spread");
-        var numerodeimagens = 15;
 
-//      PARTE QUE NAO PRECISAS DE MEXER        
-        var counter = 0;
-        var img = new Array(numerodeimagens);
-        for (var i = 0; i < numerodeimagens; i++) {
-            img[i] = new Image();
-            img[i].src = 'towards/' + 'manual/' + i + '.jpg';
-        }
+    //        VARIAVEIS QUE TENS DE MUDAR
+    var target = document.getElementById("mp_spread");
+    var numerodeimagens = 15;
 
-        function nextPic() {
-            
-            counter += 1;
-            if (counter > img.length - 1) {
-                counter = 0;
-            }
-            target.src = img[counter].src;
+    //      PARTE QUE NAO PRECISAS DE MEXER        
+    var counter = 0;
+    var img = new Array(numerodeimagens);
+    for (var i = 0; i < numerodeimagens; i++) {
+        img[i] = new Image();
+        img[i].src = 'towards/' + 'manual/' + i + '.jpg';
+    }
+
+    function nextPic() {
+
+        counter += 1;
+        if (counter > img.length - 1) {
+            counter = 0;
         }
-        
-        function prevPic() {
-            
-            counter += -1;
-            if (counter > img.length - 1) {
-                counter = 0;
-            }
-            target.src = img[counter].src;
+        target.src = img[counter].src;
+    }
+
+    function prevPic() {
+
+        counter += -1;
+        if (counter == - 1) {
+            counter = 14;
         }
+        target.src = img[counter].src;
+    }
         
         
        
