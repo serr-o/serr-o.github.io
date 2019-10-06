@@ -70,17 +70,17 @@ Would the world worry about you?
         
 <!-- CODEX -->
         
-        <p class="legenda top"><br>Compendium of knowledge that sat inside of the dark room.<a id="linknotexto" href="https://towardstheomegapoint.github.io/process.html">here</a></p>
+        <p class="legenda top"><br>Compendium of knowledge that sat inside of the dark room.</p>
  
            <div id="codex_contentor">
             <img id="codex_spread" class="lazy" src="vetores/img.svg" data-src="towards/codex/0.jpg">
             <div id="nav_cont">
-                    <a id="nav_button" onclick="prevPic()" src="images/setaesquerda.svg">&#10094;</a>
-                    <a id="nav_button" onclick="nextPic()" src="images/setadireita.svg">&#10095;</a>
+                    <a id="nav_button" onclick="prevcod()" src="images/setaesquerda.svg">&#10094;</a>
+                    <a id="nav_button" onclick="nextcod()" src="images/setadireita.svg">&#10095;</a>
                 </div>
         </div>
    
-        <p class="legenda bottom"><br>Compendium of knowledge that sat inside of the dark room. <a id="linknotexto" href="https://towardstheomegapoint.github.io/process.html">here</a></p>
+        <p class="legenda bottom"><br>Compendium of knowledge that sat inside of the dark room.</p>
         
         
 
@@ -141,6 +141,39 @@ Would the world worry about you?
         }
         target.src = img[counter].src;
     }
+        
+        
+         /* SLIDER */
+       //        VARIAVEIS QUE TENS DE MUDAR
+    var inq = document.getElementById("codex_spread");
+    var inqnumb = 6;
+
+    //      PARTE QUE NAO PRECISAS DE MEXER        
+    var leng = 0;
+    var imagem = new Array(inqnumb);
+    for (var i = 0; i < inqnumb; i++) {
+        imagem[i] = new Image();
+        imagem[i].src = 'towards/' + 'codex/' + i + '.jpg';
+    }
+
+    function nextcod() {
+
+        leng += 1;
+        if (leng > imagem.length - 1) {
+            leng = 0;
+        }
+        inq.src = imagem[leng].src;
+    }
+
+    function prevcod() {
+
+        leng += -1;
+        if (leng == - 1) {
+            leng = 5;
+        }
+        inq.src = imagem[leng].src;
+    }
+
         
         
        

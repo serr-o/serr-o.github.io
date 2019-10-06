@@ -668,9 +668,6 @@ body {
 .column1 {
     margin-left: 0px;
 }
-    
-
-
 
 
 #mp_contentor {
@@ -716,6 +713,22 @@ body {
     
 }
     
+    
+
+
+#codex_contentor {
+    display: flex;
+    position: relative;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0;
+    overflow: hidden;
+
+}
+    
+
+
 #codex_spread {
     position: relative;
     width: 115%;
@@ -725,17 +738,7 @@ body {
     overflow: hidden;
 }
 
-#codex_contentor {
-    position: relative;
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    margin-bottom: 60px;
-
-}
+    
 
 .legenda {
     width: 95%;
