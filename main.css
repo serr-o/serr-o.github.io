@@ -125,25 +125,32 @@ a:hover, a:visited, a:link, a:active {
 }
 
 #cast00 {
-    display: flex;
-    position: relative;
+    position: absolute;
     height: 80px;
-    width: auto;   
+    width: auto;
+    top: 50%;
+    left: 5%;   
 }
 
 #cast2050 {
-    display: flex;
-    position: relative;
+    position: absolute;
     height: 120px;
     width: auto;
-  
+    top: 5%;
+    left: 40%;   
 }
 
 #towards {
-    display: flex;
-    position: relative;
-    height: 150px;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    height: 500px;
     width: auto;
+    z-index: -1;
+}
+
+#a55 {
+    height: 150px;
 }
 
 
