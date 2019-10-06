@@ -103,61 +103,6 @@ a:hover, a:visited, a:link, a:active {
 
 /*    DIVISÕES    */
 
-.quadrante {
-    font-size: 36px;
-    
-}
-
-
-#qtopleft {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    text-align: left;
-    width: auto;
-    
-}
-
-#qtopright {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    text-align: right;
-    width: auto;
-}
-
-#qmedleft {
-    position: absolute;
-    top: 50vh;
-    left: 5px;    
-}
-
-#qmedright {
-    position: absolute;
-    top: 50vh;
-    right: -80px;
-    transform: rotate(90deg);
-    text-align: center;
-}
-
-
-#qbotleft {
-    position: absolute;
-    text-align: left;
-    bottom: 5px;
-    left: 5px;
-    width: auto;
-}
-
-#qbotright {
-    position: absolute;
-    text-align: right;
-    bottom:5px;
-    right: 5px;
-    width: auto;
-    
-}
-
 
 /*    ICONES    */
 
@@ -180,27 +125,24 @@ a:hover, a:visited, a:link, a:active {
 }
 
 #cast00 {
-    position: absolute;
+    display: flex;
+    position: relative;
     height: 80px;
-    width: auto;
-    top: 50%;
-    left: 5%;   
+    width: auto;   
 }
 
 #cast2050 {
-    position: absolute;
+    display: flex;
+    position: relative;
     height: 120px;
     width: auto;
-    top: 5%;
-    left: 40%;   
+  
 }
 
 #towards {
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    display: flex;
+    position: relative;
     height: 150px;
-    transform: translate(-50%, -50%);
     width: auto;
 }
 
