@@ -103,6 +103,48 @@ a:hover, a:visited, a:link, a:active {
 
 /*    DIVISÕES    */
 
+.quadrante {
+    font-size: 24px;
+    
+}
+
+
+#qtopleft {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    text-align: left;
+    width: auto;
+    
+}
+
+#qtopright {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    text-align: right;
+    width: auto;
+}
+
+
+
+#qbotleft {
+    position: absolute;
+    text-align: left;
+    bottom: 5px;
+    left: 5px;
+    width: auto;
+}
+
+#qbotright {
+    position: absolute;
+    text-align: right;
+    bottom:5px;
+    right: 5px;
+    width: auto;
+    
+}
+
 
 /*    ICONES    */
 
@@ -126,7 +168,8 @@ a:hover, a:visited, a:link, a:active {
 
 #cast00 {
     position: absolute;
-    height: 80px;
+    height: 5vw;
+    min-height: 60px;
     width: auto;
     top: 50%;
     left: 5%;   
@@ -134,23 +177,29 @@ a:hover, a:visited, a:link, a:active {
 
 #cast2050 {
     position: absolute;
-    height: 120px;
+    height: 6vw;
     width: auto;
-    top: 5%;
-    left: 40%;   
+    min-height: 80px;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%);
 }
 
 #towards {
     position: absolute;
-    left: 2%;
-    top: 2%;
-    height: 500px;
+    left: 50%;
+    top: 50%;
+    height: 10vw;
+    min-height: 120px;
+    transform: translate(-50%, -50%);
     width: auto;
-    z-index: -1;
 }
 
 #a55 {
-    height: 150px;
+    position: absolute;
+    height: 8vw;
+    right: 5%;
+    top: 5%;
 }
 
 
