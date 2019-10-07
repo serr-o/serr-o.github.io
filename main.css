@@ -47,6 +47,7 @@ a:hover, a:visited, a:link, a:active {
     z-index: 0; 
     justify-content: space-between;
 }
+
 #background_side{
     position:absolute; 
     top:0px;
