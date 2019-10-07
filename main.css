@@ -187,8 +187,8 @@ a:hover, a:visited, a:link, a:active {
 
 #towards {
     position: absolute;
-    left: 50%;
-    top: 50%;
+    left: 35%;
+    top: 55%;
     height: 10vw;
     min-height: 120px;
     transform: translate(-50%, -50%);
@@ -201,6 +201,15 @@ a:hover, a:visited, a:link, a:active {
     min-height: 120px;
     right: 40px;
     top: 60px;
+}
+
+#ittakes {
+    position: absolute;
+    height: 8vw;
+    min-height: 120px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 
