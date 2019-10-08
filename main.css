@@ -213,6 +213,145 @@ a:hover, a:visited, a:link, a:active {
     transform: translate(-50%, -50%);
 }
 
+/* MEDIA QUARIES */
+
+@media screen and (max-width: 780px) {
+
+
+body {
+    flex-direction: column;
+}
+    
+#side_bar {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    top: 0px;
+    width: 100vw;
+    height: 9vw;
+    animation: appear 0.5s; 
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    justify-content:flex-start;
+}
+
+#main {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+}
+
+#qtopleft, #qtopright, #qbotleft, #qbotright{
+      display: none;  
+}
+    
+@keyframes appear {
+    0% {top: -50px;}
+    100% {top: 0px;}      
+}
+
+    
+#about {
+    display: flex;
+    position: relative;
+    font-size: 8vw;
+    float: left;
+    line-height: 6vw;
+    width: auto;
+    left: 5px;
+    top: 4px;
+}
+    
+#contact {
+    display: inline-block;
+    position: relative;
+    font-size: 4vw; 
+    margin: auto;
+    margin-top: 0px;
+    float: none;
+    width: 30vw;
+}
+  
+#nome{
+    display: flex;
+    position: relative;
+    height:6vw;
+    width: auto;
+	content:url(vetores/serraho.svg);
+    right: 5px;
+    top: 4px;
+    margin: auto;
+    float: right;
+}
+    
+#side_bar:hover {
+    width: 100vw;
+
+}
+
+#side_bar:hover + #main {
+    left: 0px;
+
+}
+   
+.trans{
+    display: none;
+}
+.notrans {
+    display: inline-block;
+}
+    
+    
+#cast00 {
+    position: absolute;
+    height: 20vw;
+    min-height: 0px;
+    width: auto;
+    top: 50%;
+    left: 20px;   
+}
+
+#cast2050 {
+    position: absolute;
+    height: 20vw;
+    width: auto;
+    min-height: 0px;
+    bottom: 40px;
+    left: 20px;
+    transform: none;
+}
+
+#towards {
+    position: absolute;
+    left: 5%;
+    top: 20%;
+    height: 30vw;
+    min-height: 0px;
+    transform: none;
+    width: auto;
+}
+
+#a55 {
+    position: absolute;
+    height: 20vw;
+    min-height: 0px;
+    right: 10px;
+    top: auto;
+    bottom: 10px;
+}
+
+#ittakes {
+    position: absolute;
+    height: 30vw;
+    min-height: 0px;
+    left: auto;
+    top: 15%;
+    right: 10%;
+    transform: none;
+}
+    
+
+    
+
 
 
 
