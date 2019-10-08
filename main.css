@@ -150,6 +150,7 @@ a:hover, a:visited, a:link, a:active {
 /*    ICONES    */
 
 .thumbnail {
+    mix-blend-mode: multiply;
 
 }
 
