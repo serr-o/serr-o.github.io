@@ -723,6 +723,7 @@ body {
     flex-direction: column;
     margin-left: 0px;
     margin-right: 0;
+    margin-bottom: 40px;
     overflow: hidden;
 
 }
