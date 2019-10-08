@@ -150,9 +150,9 @@ a:hover, a:visited, a:link, a:active {
 .thumbnail {
     display: flex;
     position: relative;
-    width: 600px;
+    width: 95%;
     height: auto;
-    margin-top: 20px;
+   
     
 }
 
@@ -171,8 +171,8 @@ a:hover, a:visited, a:link, a:active {
 .intro {
     width: 95%;
     height: auto;
-    margin-top: 20px;
-    font-size: 24px;
+    margin-top: 40px;
+    font-size: 22px;
     margin-bottom: 20px;
 }
 
@@ -186,11 +186,14 @@ a:hover, a:visited, a:link, a:active {
 
 .column1, .column2 {
     display: flex;
+    position: relative;
     flex-direction: column;
     width: 50%;
 }
 
-
+.lazy {
+    display: flex;
+}
 
 
 .spread {
@@ -202,17 +205,16 @@ a:hover, a:visited, a:link, a:active {
     
 }
 
-.instalacao {
-    height: auto;
-    width: 100%;
-    
-}
 
 .legenda {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
     font-size: 22px;
+}
+
+.aftertext {
+    display: none;
 }
 
 .soundtrack {
@@ -231,15 +233,6 @@ a:hover, a:visited, a:link, a:active {
 .highlight:hover {
     text-decoration: underline;
     
-}
-
-
-.related {
-    display: flex;
-    height: 100px;
-    padding-top: 75px;
-    width: 100%;
-    text-align: right;
 }
 
 
@@ -264,26 +257,6 @@ a:hover, a:visited, a:link, a:active {
     animation-fill-mode: forwards;
 }
 
-.colab {
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    font-size: 24px;
-    transform: rotate(90deg);
-    color: white;
-    background-color: black;
-    top: 500px;
-    right: -270px;
-    height: 80px;
-    width: 450px;
-    border-radius: 0px 0px 5px 5px; 
-    align-content: flex-end;
-    animation: rightape2 0.5s;
-    animation-timing-function: cubic-bezier(,1,0.9,0.8);
-    animation-delay: 1.5s;
-    animation-fill-mode: forwards;
-    
-}
 
 @keyframes rightape {
     0% {right: -100px;}
@@ -313,7 +286,7 @@ a:hover, a:visited, a:link, a:active {
 
 
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1000px) {
     
 body {
    
@@ -513,9 +486,11 @@ body {
 .thumbnail {
     display: flex;
     position: relative;
-    width: 70%;
+    width: 60%;
     height: auto;
-    margin-left: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
     
 }
 
@@ -529,7 +504,9 @@ body {
     margin-left: 17.5px;
 }
 
-    
+.head {
+    font-size: 18px;
+    }
 
 
 
