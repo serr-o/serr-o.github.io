@@ -137,6 +137,7 @@ a:hover, a:visited, a:link, a:active {
     animation: ape 0.5s;
     animation-timing-function: cubic-bezier(,1,0.9,0.8);
     transition: left 0.5s;
+    margin-bottom: 50px;
 }
 
 

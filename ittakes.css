@@ -470,7 +470,7 @@ body {
     padding-left: 0px;
     padding-right: 0px;
     margin-right: 0;
-
+    
 }
 
 
@@ -518,8 +518,6 @@ body {
 }
     
 
-
-
 .related {
     display: flex;
     height:15vw;
@@ -529,6 +527,11 @@ body {
     text-align: right;
 }
 
+    .almofada {
+        height: 50px;
+        width: 100px;
+        background-color: red;
+    }
 
 
 }
