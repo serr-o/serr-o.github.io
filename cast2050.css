@@ -113,11 +113,6 @@ a:hover, a:visited, a:link, a:active {
 }
 
 
-
-
-
-
-
 #nome:hover, #about:hover, #contact:hover {
     mix-blend-mode: lighten;
 }
@@ -175,12 +170,7 @@ a:hover, a:visited, a:link, a:active {
 }
 
 
-.contentor_colunas {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-}
+
 
 .row {
     display: flex;
@@ -188,15 +178,27 @@ a:hover, a:visited, a:link, a:active {
     width: 100%;
 }
 
-
-
-
 .spread {
     display: flex;
     position: relative;
     width: 50%;
     overflow: hidden;
     flex-direction: column;
+}
+
+.legenda {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.highlight:active, .highlight:hover, .highlight:link, .highlight:visited {
+    color: #00ff00;
+    cursor: pointer;
+    
+}
+
+.highlight:hover {
+    text-decoration: underline;
     
 }
 
@@ -239,6 +241,17 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .highlight:hover {
+    text-decoration: underline;
+    
+}
+
+.highlight2:active, .highlight2:hover, .highlight2:link, .highlight2:visited {
+    color: #000000;
+    cursor: pointer;
+    
+}
+
+.highlight2:hover {
     text-decoration: underline;
     
 }
@@ -336,24 +349,48 @@ body {
    
 }
     
-
-.contentor_colunas {
-    position: relative;
+#titulo {
     display: flex;
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: auto;
+}
+.row {
     flex-direction: column;
+        
+}
+
+.spread {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+}
+    
+.construct {
+        width: 100%;
+    }
+    
+
+.legenda {
+    width: 95%;
+    margin-left: 0;
+    margin-right: auto;
     margin-top: 20px;
-    width: 100%;
+        
 }
 
-.column1, .column2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.chat {
+    width: 150%;
+    margin-left: -29%;
+    margin-right: auto;
 }
+    
 
-.column1 {
-    margin-left: 0px;
-}
+
+
 
 .spread {
     width: 100%;
@@ -387,7 +424,7 @@ body {
     position: fixed;
     flex-direction: row;
     top: 0px;
-    width: 100vw;
+    width: 100%;
     height: 9vw;
     animation: appear 0.5s; 
     animation-timing-function: cubic-bezier(,1,0.9,0.8);
@@ -436,7 +473,7 @@ body {
 }
     
 #side_bar:hover {
-    width: 100vw;
+    width: 100%;
 
 }
 
@@ -490,9 +527,9 @@ body {
     font-size: 2.5vw;
     top:auto;
     bottom:0;
-    right: 12px;
+    right: 10px;
     height: 6vh;
-    width: 45vw;
+    width: 75vw;
     border-radius: 5px 5px 0px 0px; 
     align-content: flex-end;
     animation: rightape 0.5s;
@@ -500,6 +537,29 @@ body {
     animation-timing-function: cubic-bezier(,1,0.9,0.8);
     animation-fill-mode: forwards;
 }
+    
+.colab_mm {
+    font-size: 2.5vw;
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 2px;
+}
+
+.date_mm {
+    font-size: 2.5vw;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 2px;
+}
+    
+.break {
+        display: none;
+}
+
 
 @keyframes rightape {
     0% {bottom: -70px;}
@@ -510,13 +570,13 @@ body {
     display: flex;
     position: absolute;
     flex-direction: column;
-    width: 100vw;
+    width: 100%;
     left:0px;
     top: 50px;
     padding-left: 0px;
     padding-right: 0px;
     margin-right: 0;
-
+    margin-left: 0px;
 }
 
 
@@ -525,18 +585,31 @@ body {
     100%{left: 0px;}
 }
 
-
-
+#titulo {
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    width: 95%;
+    margin-left: 0;
+    margin-right: auto;
+}
+    
 .thumbnail {
     display: flex;
-    position: relative;
-    width: 70%;
-    height: auto;
-    margin-left: 2.5%;
-    margin-right: auto;
-    z-index: -2;
-    
+    height: 100%;
+    width: auto;
+    margin-left: 0;
+    mix-blend-mode: multiply;
 }
+
+.thumbnail2 {
+    display: flex;
+    height: 100%;
+    width: auto;
+    mix-blend-mode: multiply;
+}
+
+
 
 .intro {
     letter-spacing: 0.2px;
@@ -549,6 +622,10 @@ body {
 }
 
     
+.row {
+    flex-direction: column;
+        
+}
 
 
 
@@ -556,23 +633,39 @@ body {
     display: flex;
     width: 100%;
     overflow: hidden;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     opacity: 1;
 }
+    
+.construct {
+        width: 100%;
+    }
     
 
 .legenda {
     font-size: 18px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
         
 }
+
+.chat {
+    width: 150%;
+    margin-left: -29%;
+    margin-right: auto;
+}
+    
 
 .related {
     display: flex;
     height:15vw;
     padding-top: 5vw;
-    width: 100%;
-    margin-left: 5px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
     text-align: right;
 }
 
