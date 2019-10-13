@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SERRA</title>
+    <link rel="stylesheet" href="jurnal.css">
+    <link rel="icon" type="image/png" href="#"> 
+  
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
+
+</head>
+
+
+<body>
+        <div id="side_bar">
+            <div id="background_side"></div>
+            <a href="about.html"><div id="about">ABOUT</div></a>
+            <div id="contact"><span class="trans">+91 033 59 64</span><span class="notrans">+91 033 59 64</span></div>
+            <a href="index.html"><img id="nome" src="vetores/serra.svg"></a>
+        </div>
+        <div id="main">
+          <div id="titulo"><img class="thumbnail" src="icones/jurnal3.svg">
+              <img class="thumbnail2" src="icones/jurnal4.svg"></div>
+            <div class="intro">JUR.NAL is a semestral magazine released by NOVA Law School's Student's Union.
+                The magazine publishes articles, poems, and other literature from the school's student's.<br>
+                The relationship between text and its illustration is hard to balance. Unless these images are carefully curated taking into account the intentions of the author, they can change or hinder the tone and intentions of the writer. To avoid this phenomenom we decided to take an abstract aproach, giving the pages an eye-catching characteristic to them, but not so much that it completely deviates the attention from the contents of the writing. These illustrations allow some questions to be raised, engaging the reader on a level that isn't superimposed on the text, but paralel to it.
+                
+            </div>
+            
+                <div class="row">
+                    <div id="jurnal3_contentor">
+                        <img id="jurnal3_spread" class="lazy" src="vetores/img.svg" data-src="jurnal3/0.jpg">
+                        <div id="nav_cont">
+                                <a id="nav_button" onclick="prevPic()" src="images/setaesquerda.svg">&#10094;</a>
+                                <a id="nav_button" onclick="nextPic()" src="images/setadireita.svg">&#10095;</a>
+                            </div>
+                    </div>
+                    
+                    </div>
+            
+            
+                <div class="row">
+                    <div id="jurnal4_contentor">
+                        <img id="jurnal4_spread" class="lazy" src="vetores/img.svg" data-src="jurnal4/0.jpg">
+                        <div id="nav_cont">
+                                <a id="nav_button" onclick="prev4()" src="images/setaesquerda.svg">&#10094;</a>
+                                <a id="nav_button" onclick="next4()" src="images/setadireita.svg">&#10095;</a>
+                            </div>
+                    </div>
+                    
+                    </div>
+                    
+            
+            
+                
+          
+            
+            
+            
+    
+        </div>
+    
+    
+        <div class="date"><span class="date_mm">2018/2019</span></div>
+    
+    <div class="colab"><span class="colab_mm">COLLABORATION WITH: <a href="https://inespinheiro.com">INÊS PINHEIRO</a></span></div>
+</body>
+
+    <script>
+
+
+        $(function() {
+        $('.lazy').Lazy({
+            // your configuration goes here
+            scrollDirection: 'vertical',
+            delay: 350,
+            effect: 'fadeIn',
+            effectTime: 200
+        });
+    });
+        
+        
+         /* SLIDER */
+
+    //        VARIAVEIS QUE TENS DE MUDAR
+    var target = document.getElementById("jurnal3_spread");
+    var numerodeimagens = 6;
+
+    //      PARTE QUE NAO PRECISAS DE MEXER        
+    var counter = 0;
+    var img = new Array(numerodeimagens);
+    for (var i = 0; i < numerodeimagens; i++) {
+        img[i] = new Image();
+        img[i].src = 'jurnal3/' + i + '.jpg';
+    }
+
+    function nextPic() {
+
+        counter += 1;
+        if (counter > img.length - 1) {
+            counter = 0;
+        }
+        target.src = img[counter].src;
+    }
+
+    function prevPic() {
+
+        counter += -1;
+        if (counter == - 1) {
+            counter = 5;
+        }
+        target.src = img[counter].src;
+    }
+        
+        
+        
+        
+           /* SLIDER */
+       //        VARIAVEIS QUE TENS DE MUDAR
+    var inq = document.getElementById("jurnal4_spread");
+    var inqnumb = 7;
+
+    //      PARTE QUE NAO PRECISAS DE MEXER        
+    var leng = 0;
+    var imagem = new Array(inqnumb);
+    for (var i = 0; i < inqnumb; i++) {
+        imagem[i] = new Image();
+        imagem[i].src = 'jurnal4/' + i + '.jpg';
+    }
+
+    function next4() {
+
+        leng += 1;
+        if (leng > imagem.length - 1) {
+            leng = 0;
+        }
+        inq.src = imagem[leng].src;
+    }
+
+    function prev4() {
+
+        leng += -1;
+        if (leng == - 1) {
+            leng = 6;
+        }
+        inq.src = imagem[leng].src;
+    }
+
+        
+</script>
+
+    
+    
+    
+</html>

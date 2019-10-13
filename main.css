@@ -44,7 +44,7 @@ a:hover, a:visited, a:link, a:active {
     flex-direction: column;
     width: 20vh;
     height: 100vh;
-    z-index: 0; 
+    z-index: 10; 
     justify-content: space-between;
 }
 
@@ -96,6 +96,8 @@ a:hover, a:visited, a:link, a:active {
 
 #main {
     position: relative;
+    display: flex;
+    flex-direction: row;
     width: 89vw;
     height: 100vh;
     z-index: 5;
@@ -103,7 +105,7 @@ a:hover, a:visited, a:link, a:active {
 }
 
 /*    DIVISÕES    */
-
+/*
 .quadrante {
     font-size: 24px;
     
@@ -146,19 +148,28 @@ a:hover, a:visited, a:link, a:active {
     
 }
 
-
+*/
 /*    ICONES    */
 
 .thumbnail {
     mix-blend-mode: multiply;
+    width: 100%;
+    height: auto;
+    animation: showup 1s;
+    animation-timing-function: 1;
 
 }
 
 .thumbnail:hover {
     animation-name: swoop;
-    animation-iteration-count: 3;
+    animation-iteration-count: 2;
     animation-timing-function: ease-out;
-    animation-duration: 0.8s;
+    animation-duration: 0.5s;
+}
+
+@keyframes showup {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 @keyframes swoop {
@@ -168,50 +179,62 @@ a:hover, a:visited, a:link, a:active {
     100% {opacity: 1;}
 }
 
+.coluna {
+    display:flex;
+    flex-direction: column;
+    width: 27vh;
+}
+
+.coluna2 {
+    display:flex;
+    flex-direction: column;
+    width: 27vh;
+    margin-left: 60px;
+}
+
 #cast00 {
-    position: absolute;
-    height: 4vw;
-    min-height: 60px;
-    width: auto;
-    top: 50%;
-    left: 20px;   
+    position: relative;
+    display: flex;
+    width: 114%;
+    
 }
 
 #cast2050 {
-    position: absolute;
-    height: 7.5vw;
-    width: auto;
-    min-height: 100px;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%);
+    position: relative;
+    display: flex; 
+    margin-top: 20px;
+
 }
 
 #towards {
-    position: absolute;
-    left: 35%;
-    top: 55%;
-    height: 10vw;
-    min-height: 120px;
-    transform: translate(-50%, -50%);
-    width: auto;
+    position: relative;
+    display: flex;
+
 }
 
 #a55 {
-    position: absolute;
-    height: 8vw;
-    min-height: 120px;
-    right: 40px;
-    top: 60px;
+    position: relative;
+    display: flex;
+    margin-top: 25px;
+    
 }
 
 #ittakes {
-    position: absolute;
-    height: 8vw;
-    min-height: 120px;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    
+}
+
+#jurnal3 {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    
+}
+
+#jurnal4 {
+    
 }
 
 /* MEDIA QUARIES */
@@ -238,13 +261,9 @@ body {
 #main {
         position: relative;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
 }
-
-#qtopleft, #qtopright, #qbotleft, #qbotright{
-      display: none;  
-}
-    
+ 
 @keyframes appear {
     0% {top: -50px;}
     100% {top: 0px;}      
@@ -300,56 +319,11 @@ body {
 .notrans {
     display: inline-block;
 }
-    
-    
-#cast00 {
-    position: absolute;
-    height: 20vw;
-    min-height: 0px;
-    width: auto;
-    top: 50%;
-    left: 20px;   
+ 
+.thumbnail {
+    mix-blend-mode: multiply;
 }
-
-#cast2050 {
-    position: absolute;
-    height: 20vw;
-    width: auto;
-    min-height: 0px;
-    bottom: 40px;
-    left: 20px;
-    transform: none;
-}
-
-#towards {
-    position: absolute;
-    left: 5%;
-    top: 20%;
-    height: 30vw;
-    min-height: 0px;
-    transform: none;
-    width: auto;
-}
-
-#a55 {
-    position: absolute;
-    height: 20vw;
-    min-height: 0px;
-    right: 10px;
-    top: auto;
-    bottom: 10px;
-}
-
-#ittakes {
-    position: absolute;
-    height: 30vw;
-    min-height: 0px;
-    left: auto;
-    top: 15%;
-    right: 10%;
-    transform: none;
-}
-    
+  
 
     
 
