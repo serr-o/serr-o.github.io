@@ -28,17 +28,18 @@ body {
     font-family:serif;
     color: black;
     font-family: light;
-    background: radial-gradient(#0000ff, #000000);
-    background-size: 400% 400%;
-    animation: AnimationName 30s infinite;
+    background: radial-gradient(#ff0000, #ffffff, #707070, #000000, #0000ff);
+    background-size: 1200% 1200%;
+    animation: AnimationName 15s alternate infinite;
 }
 
 
 
 @keyframes AnimationName {
-    0%{background-position:0% 75%}
-    50%{background-position:100% 80%}
-    100%{background-position:0% 25%}
+    0%{background-position:0% 0%}
+    33%{background-position:100% 100%}
+    66%{background-position:75% 0%}
+    100%{background-position:100% 0%}
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -124,7 +125,8 @@ a:hover, a:visited, a:link, a:active {
     height: auto;
     max-width: 1300px;
     margin-top: 0;
-    color: white;
+    margin-top: auto;
+    margin-bottom: 2.5%;
 
 }
 
@@ -188,6 +190,9 @@ body {
         position: relative;
         display: flex;
         flex-direction: row;
+        width: 95%;
+        margin-left: auto;
+    margin-right: auto;
 }
 
  
@@ -246,6 +251,50 @@ body {
 .notrans {
     display: inline-block;
 }
+    
+    
+#cont_texto {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-width: 1300px;
+    margin-top: 0;
+    color: white;
+
+}
+
+#eu {
+    display: flex;
+    position: relative;
+    height: 30vw;
+    width: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
+}
+
+
+.titulo {
+    font-size: 72px;
+    letter-spacing: 0px;
+    width: 100%;
+}
+
+.text {
+    margin-top: 0;
+    font-size: 18px;
+    width: 100%;
+}
+
+.for {
+    margin-top: 0;
+    font-size: 18px;
+    width: 100%;
+    
+}
+
+
  
 
 
