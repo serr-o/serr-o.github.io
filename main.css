@@ -33,6 +33,12 @@ body {
 
 a:hover, a:visited, a:link, a:active {
     text-decoration: none;
+    color: white;
+}
+
+#about:hover, #about:visited, #about:link, #about:active {
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -72,6 +78,7 @@ a:hover, a:visited, a:link, a:active {
     mix-blend-mode: exclusion;
     width: 100%;   
 }
+
 
 #nome {
     display: flex;
@@ -130,20 +137,21 @@ a:hover, a:visited, a:link, a:active {
 .coluna {
     display:flex;
     flex-direction: column;
-    width: 27vh;
+    width: 35vh;
 }
 
 .coluna2 {
     display:flex;
     flex-direction: column;
-    width: 27vh;
+    width: 35vh;
     margin-left: 60px;
 }
+
 
 #cast00 {
     position: relative;
     display: flex;
-    width: 114%;
+    width: 110%;
     
 }
 
@@ -151,6 +159,8 @@ a:hover, a:visited, a:link, a:active {
     position: relative;
     display: flex; 
     margin-top: 20px;
+    width: 90%;
+    margin-left: auto;
 
 }
 
@@ -164,7 +174,8 @@ a:hover, a:visited, a:link, a:active {
     position: relative;
     display: flex;
     margin-top: 25px;
-    
+    margin-left: auto;
+    width: 100%;
 }
 
 #ittakes {
@@ -175,13 +186,18 @@ a:hover, a:visited, a:link, a:active {
 }
 
 #jurnal3 {
-    margin-top: 20px;
+    margin-top: 40px;
     position: relative;
     display: flex;
+    width: 100%
     
 }
 
-#jurnal4 {
+#jurnal4 { 
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: -10px;
     
 }
 

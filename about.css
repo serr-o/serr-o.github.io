@@ -28,7 +28,17 @@ body {
     font-family:serif;
     color: black;
     font-family: light;
-    
+    background: radial-gradient(#0000ff, #000000);
+    background-size: 400% 400%;
+    animation: AnimationName 30s infinite;
+}
+
+
+
+@keyframes AnimationName {
+    0%{background-position:0% 75%}
+    50%{background-position:100% 80%}
+    100%{background-position:0% 25%}
 }
 
 a:hover, a:visited, a:link, a:active {
@@ -94,48 +104,63 @@ a:hover, a:visited, a:link, a:active {
 
 /* PARTE PRINCIPAL */
 
+
+
 #main {
     position: relative;
     display: flex;
     flex-direction: row;
-    width: 89vw;
+    width: 91vw;
     height: 100vh;
     z-index: 5;
     margin-left: 20px;
 }
 
-/*    ICONES    */
-
-.thumbnail {
-    mix-blend-mode: multiply;
-    width: 100%;
+#cont_texto {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 70%;
     height: auto;
-    animation: showup 1s;
-    animation-timing-function: 1;
+    max-width: 1300px;
+    margin-top: 0;
+    color: white;
 
 }
 
-.thumbnail:hover {
-    animation-name: swoop;
-    animation-iteration-count: 2;
-    animation-timing-function: ease-out;
-    animation-duration: 0.5s;
-}
-
-@keyframes showup {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-@keyframes swoop {
-    0% {opacity: 1;}
-    10% {opacity: 0;}
-    75% {opacity: 1;}
-    100% {opacity: 1;}
+#eu {
+    display: flex;
+    position: relative;
+    height: 30vw;
+    width: auto;
+    margin-left: auto;
+    margin-bottom: 0px;
 }
 
 
+.titulo {
+    font-size: 10vw;
+    letter-spacing: -5px;
+    width: 100%;
+}
 
+.text {
+    margin-top: 0;
+    font-size: 30px;
+    width: 100%;
+}
+
+.for {
+    margin-top: 0;
+    font-size: 30px;
+    width: 100%;
+    
+}
+
+.malio {
+    height: 36px;
+    
+}
 
 
 /* MEDIA QUARIES */
@@ -164,6 +189,7 @@ body {
         display: flex;
         flex-direction: row;
 }
+
  
 @keyframes appear {
     0% {top: -50px;}
