@@ -115,18 +115,20 @@ a:hover, a:visited, a:link, a:active {
     height: 100vh;
     z-index: 5;
     margin-left: 20px;
+    background-color: blue;
 }
 
 #cont_texto {
     display: flex;
     position: relative;
     flex-direction: column;
-    width: 70%;
+    width: 98%;
     height: auto;
-    max-width: 1300px;
+    max-width: 1000px;
     margin-top: 0;
     margin-top: auto;
-    margin-bottom: 2.5%;
+    margin-bottom: 10px;
+    margin-left: 2%;
 
 }
 
@@ -141,20 +143,21 @@ a:hover, a:visited, a:link, a:active {
 
 
 .titulo {
-    font-size: 10vw;
+    font-size: 20vmin;
+    line-height: 15vmin;
     letter-spacing: -5px;
     width: 100%;
 }
 
 .text {
     margin-top: 0;
-    font-size: 30px;
+    font-size: 3.5vmin;
     width: 100%;
 }
 
 .for {
     margin-top: 0;
-    font-size: 30px;
+    font-size: 3.5vmin;
     width: 100%;
     
 }
@@ -174,9 +177,10 @@ body {
     flex-direction: column;
 }
     
+    
 #side_bar {
     display: flex;
-    position: relative;
+    position: fixed;
     flex-direction: row;
     top: 0px;
     width: 100vw;
@@ -186,11 +190,27 @@ body {
     justify-content:flex-start;
 }
 
+#side_bar #about {
+       order: 4;
+    }
+    
+#side_bar #nome {
+       order: 2;
+    } 
+#side_bar #contact {
+       order: 3;
+    }
+    
+#side_bar #background_side {
+    order: 1;
+}  
+    
+
 #main {
         position: relative;
         display: flex;
         flex-direction: row;
-        width: 95%;
+        width:100%;
         margin-left: auto;
     margin-right: auto;
 }
@@ -209,7 +229,7 @@ body {
     float: left;
     line-height: 6vw;
     width: auto;
-    left: 5px;
+    right: 5px;
     top: 4px;
 }
     
@@ -229,12 +249,11 @@ body {
     height:6vw;
     width: auto;
 	content:url(vetores/serraho.svg);
-    right: 5px;
+    left: 5px;
     top: 4px;
     margin: auto;
     float: right;
 }
-    
 #side_bar:hover {
     width: 100vw;
 
@@ -260,6 +279,10 @@ body {
     width: 100%;
     height: auto;
     max-width: 1300px;
+    margin-top: auto;
+    margin-bottom: 10%;
+    margin-left: 0;
+    margin-right: 0;
 
 }
 
@@ -274,20 +297,21 @@ body {
 
 
 .titulo {
-    font-size: 19vw;
+    font-size: 25vw;
     letter-spacing: 0px;
     width: 100%;
+    line-height: 20vw;
 }
 
 .text {
     margin-top: 0;
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
 }
 
 .for {
     margin-top: 0;
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
     
 }

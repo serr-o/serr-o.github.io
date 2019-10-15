@@ -181,6 +181,10 @@ a:hover, a:visited, a:link, a:active {
     width: 100%;
 }
 
+.rowbaixo {
+    margin-bottom: 50px;
+}
+
 .spread {
     display: flex;
     position: relative;
@@ -204,7 +208,6 @@ a:hover, a:visited, a:link, a:active {
     width: 95%;
     height: auto;
     margin-bottom: 0;
-   /* box-shadow: 0px 0px 25px 15px rgba(0,0,0,0.2);*/
 }
    
 
@@ -261,11 +264,6 @@ a:hover, a:visited, a:link, a:active {
     margin-bottom: auto;
 }
 
-.instalacao {
-    height: auto;
-    width: 100%;
-    
-}
 
 .legenda {
     width: 95%;
@@ -302,16 +300,6 @@ a:hover, a:visited, a:link, a:active {
     text-decoration: underline;
     
 }
-
-
-.related {
-    display: flex;
-    height: 100px;
-    padding-top: 75px;
-    width: 100%;
-    text-align: right;
-}
-
 
 
 .date {
@@ -438,13 +426,6 @@ body {
 }
     
 
-
-
-
-.spread {
-    width: 100%;
-
-}
     
 .instalacao {
     position:relative;
@@ -468,18 +449,34 @@ body {
     flex-direction: column;
 }
     
+    
 #side_bar {
     display: flex;
     position: fixed;
     flex-direction: row;
     top: 0px;
-    width: 100%;
+    width: 100vw;
     height: 9vw;
     animation: appear 0.5s; 
     animation-timing-function: cubic-bezier(,1,0.9,0.8);
     justify-content:flex-start;
 }
 
+#side_bar #about {
+       order: 4;
+    }
+    
+#side_bar #nome {
+       order: 2;
+    } 
+#side_bar #contact {
+       order: 3;
+    }
+    
+#side_bar #background_side {
+    order: 1;
+}  
+    
     
     
     
@@ -495,7 +492,8 @@ body {
     font-size: 8vw;
     float: left;
     line-height: 6vw;
-    left: 5px;
+    width: auto;
+    right: 5px;
     top: 4px;
 }
     
@@ -515,29 +513,13 @@ body {
     height:6vw;
     width: auto;
 	content:url(vetores/serraho.svg);
-    right: 5px;
+    left: 5px;
     top: 4px;
     margin: auto;
     float: right;
 }
     
-#side_bar:hover {
-    width: 100%;
 
-}
-
-#side_bar:hover + #main {
-    left: 0px;
-
-}
-   
-.trans{
-    display: none;
-}
-.notrans {
-    display: inline-block;
-}
- 
     
  .date {
     position: fixed;
@@ -607,7 +589,7 @@ body {
     display: flex;
     position: absolute;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     left:0px;
     top: 50px;
     padding-left: 0px;
@@ -667,47 +649,32 @@ body {
 }
 
 
-
-.spread {
-    display: flex;
+#jurnal3_contentor, #jurnal4_contentor {
+        flex-direction: column;
+        width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
+}
+    
+#jurnal3_spread, #jurnal4_spread {
+    position: relative;
     width: 100%;
-    overflow: hidden;
+    height: auto;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#nav_cont {
+    flex-direction: row;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: auto;
     margin-right: auto;
-    opacity: 1;
-}
+    justify-content: space-around;
+    width: 100vw;
+} 
     
-.construct {
-        width: 100%;
-    }
-    
-
-.legenda {
-    font-size: 18px;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-        
-}
-
-.chat {
-    width: 150%;
-    margin-left: -29%;
-    margin-right: auto;
-}
-    
-
-.related {
-    display: flex;
-    height:15vw;
-    padding-top: 5vw;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: right;
-}
-
 
 
 }

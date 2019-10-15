@@ -335,6 +335,8 @@ body {
 body {
     flex-direction: column;
 }
+  
+
     
 #side_bar {
     display: flex;
@@ -347,6 +349,22 @@ body {
     animation-timing-function: cubic-bezier(,1,0.9,0.8);
     justify-content:flex-start;
 }
+
+#side_bar #about {
+       order: 4;
+    }
+    
+#side_bar #nome {
+       order: 2;
+    } 
+#side_bar #contact {
+       order: 3;
+    }
+    
+#side_bar #background_side {
+    order: 1;
+}  
+    
 
     
     
@@ -363,7 +381,8 @@ body {
     font-size: 8vw;
     float: left;
     line-height: 6vw;
-    left: 5px;
+    width: auto;
+    right: 5px;
     top: 4px;
 }
     
@@ -383,7 +402,7 @@ body {
     height:6vw;
     width: auto;
 	content:url(vetores/serraho.svg);
-    right: 5px;
+    left: 5px;
     top: 4px;
     margin: auto;
     float: right;

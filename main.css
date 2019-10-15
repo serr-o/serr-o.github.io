@@ -212,7 +212,7 @@ body {
     
 #side_bar {
     display: flex;
-    position: relative;
+    position: fixed;
     flex-direction: row;
     top: 0px;
     width: 100vw;
@@ -222,6 +222,21 @@ body {
     justify-content:flex-start;
 }
 
+#side_bar #about {
+       order: 4;
+    }
+    
+#side_bar #nome {
+       order: 2;
+    } 
+#side_bar #contact {
+       order: 3;
+    }
+    
+#side_bar #background_side {
+    order: 1;
+}  
+    
 #main {
         position: relative;
         display: flex;
@@ -241,7 +256,7 @@ body {
     float: left;
     line-height: 6vw;
     width: auto;
-    left: 5px;
+    right: 5px;
     top: 4px;
 }
     
@@ -261,7 +276,7 @@ body {
     height:6vw;
     width: auto;
 	content:url(vetores/serraho.svg);
-    right: 5px;
+    left: 5px;
     top: 4px;
     margin: auto;
     float: right;

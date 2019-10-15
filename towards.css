@@ -461,6 +461,7 @@ a:hover, a:visited, a:link, a:active {
 }
     
 
+/* MEDIA QUARIES */
 
 @media screen and (max-width: 780px) {
     
@@ -474,26 +475,8 @@ body {
     flex-direction: column;
 
 }
-
-
-
-/* MEDIA QUARIES */
-
-    
-    #nome{
-    display: flex;
-    position: relative;
-    height:6vw;
-    width: auto;
-	content:url(vetores/serraho.svg);
-    right: 5px;
-    top: 4px;
-    margin: auto;
-    float: right;
-}
-
-
-    
+ 
+        
 #side_bar {
     display: flex;
     position: fixed;
@@ -506,6 +489,21 @@ body {
     justify-content:flex-start;
 }
 
+#side_bar #about {
+       order: 4;
+    }
+    
+#side_bar #nome {
+       order: 2;
+    } 
+#side_bar #contact {
+       order: 3;
+    }
+    
+#side_bar #background_side {
+    order: 1;
+}  
+    
     
     
     
@@ -521,7 +519,8 @@ body {
     font-size: 8vw;
     float: left;
     line-height: 6vw;
-    left: 5px;
+    width: auto;
+    right: 5px;
     top: 4px;
 }
     
@@ -535,7 +534,17 @@ body {
     width: 30vw;
 }
   
-
+#nome{
+    display: flex;
+    position: relative;
+    height:6vw;
+    width: auto;
+	content:url(vetores/serraho.svg);
+    left: 5px;
+    top: 4px;
+    margin: auto;
+    float: right;
+}
     
 #side_bar:hover {
     width: 100vw;
