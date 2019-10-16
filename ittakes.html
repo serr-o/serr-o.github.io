@@ -45,9 +45,16 @@ No culminar de um ciclo de estudos em design de comunicação na faculdade de be
             
                 <div class="column2">
                     <img class="lazy spread" src="vetores/img.svg" data-src="ittakes/cartaz.jpg">
+                    <div id="pub_contentor">
+                        <img id="pub_spread" class="lazy" src="vetores/img.svg" data-src="ittakes/pub/0.jpg">
+                            <div id="nav_cont">
+                                <a id="nav_button" onclick="prevPic()" src="images/setaesquerda.svg">&#10094;</a>
+                                <a id="nav_button" onclick="nextPic()" src="images/setadireita.svg">&#10095;</a>
+                            </div>
+                    </div>
                     <img class="lazy spread" src="vetores/img.svg" data-src="ittakes/expo1.jpg">
-                    
                     <img class="lazy spread" src="vetores/img.svg" data-src="ittakes/expo2.jpg">
+                    
                     <img class="lazy spread" src="vetores/img.svg" data-src="ittakes/expo5.jpg">
                     <img class="lazy spread" src="vetores/img.svg" data-src="ittakes/expo6.jpg">
                     <img class="lazy spread" src="vetores/img.svg" data-src="ittakes/expo4.jpg">
@@ -103,6 +110,39 @@ Agradecimentos aos alunos finalistas de DC 2018/19; professores Aurelindo Jaime 
             effectTime: 200
         });
     });
+        
+        
+         /* SLIDER */
+
+    //        VARIAVEIS QUE TENS DE MUDAR
+    var target = document.getElementById("pub_spread");
+    var numerodeimagens = 11;
+
+    //      PARTE QUE NAO PRECISAS DE MEXER        
+    var counter = 0;
+    var img = new Array(numerodeimagens);
+    for (var i = 0; i < numerodeimagens; i++) {
+        img[i] = new Image();
+        img[i].src = 'ittakes/' + 'pub/' + i + '.jpg';
+    }
+
+    function nextPic() {
+
+        counter += 1;
+        if (counter > img.length - 1) {
+            counter = 0;
+        }
+        target.src = img[counter].src;
+    }
+
+    function prevPic() {
+
+        counter += -1;
+        if (counter == - 1) {
+            counter = 10;
+        }
+        target.src = img[counter].src;
+    }
 </script>
 
     

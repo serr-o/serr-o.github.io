@@ -1,0 +1,656 @@
+html {
+    width: 100%;
+}
+
+html,
+body {
+ overflow-x: hidden;
+
+}
+
+@font-face {
+    font-family: light;
+    src: url(fontes/neuelight.otf);
+}
+
+@font-face {
+    font-family: medium;
+    src: url(fontes/neuemedium.otf);
+}
+
+body {
+    width: 100%;
+    height: auto;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    font-family:serif;
+    color: black;
+    font-family: light;
+}
+
+
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: white;
+    
+}
+
+
+#side_bar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    width: 4.76vh;
+    height: 100vh;
+    z-index: 0; 
+    animation: disap 0.5s;
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    transition: width 0.5s;
+    justify-content: space-between;
+
+}
+
+
+
+#side_bar:hover {
+    width: 20vh;
+
+}
+
+#side_bar:hover + #main {
+    left: 20vh;
+
+}
+
+@keyframes disap {
+    0%{width: 20vh;;}
+    100%{width: 4.76vh;}
+}
+
+#background_side{
+    position:absolute; 
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    background: radial-gradient(#000000, #ffffff);
+    background-size: 200% 500%;
+    animation: cor 30s ease infinite;
+    filter: blur(8px);
+}
+
+@keyframes cor {
+    0%{background-position:58% 0%}
+    50%{background-position:43% 100%}
+    100%{background-position:58% 0%}
+}
+
+
+#about {
+    color: white;
+    font-size: 6vh;
+    mix-blend-mode: exclusion;
+    width: 100%;   
+}
+
+#nome {
+    display: flex;
+    width: 20vh;
+    mix-blend-mode: exclusion;
+    
+}
+
+#contact {
+    color: white;
+    font-size: 6vh;
+    overflow-wrap: break-word;
+    width: 20vh;
+    mix-blend-mode: exclusion;
+}
+
+.notrans {
+    display: none;
+}
+
+
+
+
+
+
+
+#nome:hover, #about:hover, #contact:hover {
+    mix-blend-mode: lighten;
+}
+
+/* PARTE PRINCIPAL */
+
+#main {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    height: auto;
+    width: 90%;
+    padding-left: 50px;
+    left:50px;
+    margin-right: 100px;
+    animation: ape 0.5s;
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    transition: left 0.5s;
+}
+
+
+@keyframes ape {
+    0% {left: 210px;}
+    100%{left: 50px;}
+}
+
+
+
+.thumbnail {
+    display: flex;
+    width: 75vw;
+    max-width: 1200px;
+    height: auto;
+    margin-left: 0;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.line {
+    display:flex;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(90deg, #000000, #ffffff);
+}
+
+#pwebsite {
+    text-decoration:underline;
+    color: black;
+}
+#pwebsite:hover {
+    color: dimgrey;
+}
+
+.intro {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    font-size: 28px;
+    max-width: 1200px;
+}
+
+.description {
+    width: 30%;
+    height: auto;
+    margin-top: 30px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    margin-right: 10%;
+    max-width: 1200px;
+}
+
+.legenda {
+    width: 90%;
+    height: auto;
+    margin-top: 0px;
+    font-size: 28px;
+    margin-bottom: 0px;
+    max-width: 1200px; 
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.legenda2 {
+    width: 90%;
+    height: auto;
+    margin-top: 0px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    max-width: 1200px; 
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.imgfull{
+    width: 60%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.site {
+    box-shadow: 0px 0px 30px 5px
+}
+
+#conseq_contentor {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+#cartas_contentor {
+    display: flex;
+    flex-direction: row;
+    width:100%;  
+    height: 100%;
+}
+
+.cartas {
+    display: flex;
+    position: relative;
+    width:120%;
+    margin-left: -5%;
+    margin-right: -5%;
+    
+}
+.nav_cont {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 87%;
+    width: 5%;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.nav_button {
+    display: flex;
+    position: relative;
+    width: 50%;
+    margin-left: auto;
+}
+
+.nav_button:hover {
+    opacity: 0.5;
+}
+
+.nav_button:active {
+    opacity: 1;
+}
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%;
+}
+
+#bedeo {
+    width: 100%;
+    height: 500px;
+}
+
+.aspect-ratio #bedeo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+}
+
+
+.date {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    transform: rotate(90deg);
+    color: white;
+    background-color: black;
+    top: 60px;
+    right: -100px;
+    height: 70px;
+    width: 120px;
+    border-radius: 0px 0px 5px 5px; 
+    align-content: flex-end;
+    animation: rightape 0.5s;
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.colab {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    transform: rotate(90deg);
+    color: white;
+    background-color: black;
+    top: 500px;
+    right: -270px;
+    height: 80px;
+    width: 450px;
+    border-radius: 0px 0px 5px 5px; 
+    align-content: flex-end;
+    animation: rightape2 0.5s;
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    
+}
+
+@keyframes rightape {
+    0% {right: -100px;}
+    100% {right: -30px;}
+}
+
+@keyframes rightape2 {
+    0% {right: -270px;}
+    100% {right: -200px;}
+}
+
+.date_mm {
+    font-size: 24px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+
+
+.afonsoeines:hover {
+    text-decoration: underline;
+    
+}
+
+
+
+
+
+
+
+          
+@media screen and (max-width: 1100px) {
+.intro {
+    width: 85%;
+    letter-spacing: 0.2px;
+    height: auto;
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+    
+    
+.date {
+    font-size: 18px;
+    top: 60px;
+    right: -100px;
+    height: 50px;
+    width: 80px;
+    border-radius: 0px 0px 5px 5px; 
+    align-content: flex-end;
+    animation: rightape 0.5s;
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+.date_mm {
+    font-size: 16px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 5px;
+}
+
+.colab {
+    font-size: 15px;
+    transform: rotate(90deg);
+    color: white;
+    background-color: black;
+    top: 500px;
+    right: -260px;
+    height: 45px;
+    width: 450px;
+    border-radius: 0px 0px 5px 5px; 
+    align-content: flex-end;
+    animation: rightape2 0.5s;
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    
+}
+    
+
+}
+    
+
+/* MEDIA QUARIES */
+
+@media screen and (max-width: 780px) {
+    
+    
+    
+body {
+    flex-direction: column;
+}
+    
+.row {
+    flex-direction: column;
+
+}
+ 
+        
+#side_bar {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    top: 0px;
+    width: 100vw;
+    height: 9vw;
+    animation: appear 0.5s; 
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    justify-content:flex-start;
+}
+
+#side_bar #about {
+       order: 4;
+    }
+    
+#side_bar #nome {
+       order: 2;
+    } 
+#side_bar #contact {
+       order: 3;
+    }
+    
+#side_bar #background_side {
+    order: 1;
+}  
+    
+    
+    
+    
+@keyframes appear {
+    0% {top: -50px;}
+    100% {top: 0px;}      
+}
+
+    
+#about {
+    display: flex;
+    position: relative;
+    font-size: 8vw;
+    float: left;
+    line-height: 6vw;
+    width: auto;
+    right: 5px;
+    top: 4px;
+}
+    
+#contact {
+    display: inline-block;
+    position: relative;
+    font-size: 4vw; 
+    margin: auto;
+    margin-top: 0px;
+    float: none;
+    width: 30vw;
+}
+  
+#nome{
+    display: flex;
+    position: relative;
+    height:6vw;
+    width: auto;
+	content:url(vetores/serraho.svg);
+    left: 5px;
+    top: 4px;
+    margin: auto;
+    float: right;
+}
+    
+#side_bar:hover {
+    width: 100vw;
+
+}
+
+#side_bar:hover + #main {
+    left: 0px;
+
+}
+   
+.trans{
+    display: none;
+}
+.notrans {
+    display: inline-block;
+}
+    
+.date {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(0deg);
+    color: white;
+    background-color: black;
+    top:auto;
+    bottom:0;
+    left: 10px;
+    height: 6vh;
+    width: 15vw;
+    border-radius: 5px 5px 0px 0px; 
+    align-content: flex-end;
+    animation: rightape 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    animation-fill-mode: forwards;
+}
+.date_mm {
+    font-size: 2.5vw;
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: auto;
+}
+
+.colab {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    transform: rotate(0deg);
+    color: white;
+    background-color: black;
+    font-size: 2.5vw;
+    top:auto;
+    bottom:0;
+    right: 12px;
+    height: 6vh;
+    width: 45vw;
+    border-radius: 5px 5px 0px 0px; 
+    align-content: flex-end;
+    animation: rightape 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: cubic-bezier(,1,0.9,0.8);
+    animation-fill-mode: forwards;
+}
+
+@keyframes rightape {
+    0% {bottom: -70px;}
+    100% {bottom: 0px;}
+}
+
+#main {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 100vw;
+    left:0px;
+    top: 50px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-right: 0;
+
+}
+
+
+@keyframes ape {
+    0% {left: 210px;}
+    100%{left: 0px;}
+}
+
+
+
+.thumbnail {
+    display: flex;
+    position: relative;
+    height: auto;
+    content:url(towards/towardsvertical.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    z-index: -2;
+    
+}
+
+.intro {
+    width: 90%;
+    letter-spacing: 0.2px;
+    height: auto;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 17.5px;
+}
+    
+.top {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+   
+    
+
+
+.spread {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+}
+    
+
+
+
+
+
+
+}
+    
+
+    
+
+
+
+

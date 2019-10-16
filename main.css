@@ -201,6 +201,14 @@ a:hover, a:visited, a:link, a:active {
     
 }
 
+#thereal { 
+    display: flex;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+
 /* MEDIA QUARIES */
 
 @media screen and (max-width: 780px) {
