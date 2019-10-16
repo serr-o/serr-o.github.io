@@ -28,7 +28,7 @@ body {
     font-family:serif;
     color: black;
     font-family: light;
-    background: radial-gradient(#ff0000, #ffffff, #707070, #000000, #0000ff);
+    background: radial-gradient(#000000, #ffffff);
     background-size: 1200% 1200%;
     animation: AnimationName 15s alternate infinite;
 }
@@ -287,7 +287,7 @@ body {
     height: auto;
     max-width: 1300px;
     margin-top: auto;
-    margin-bottom: 10%;
+    margin-bottom: 10px;
     margin-left: 0;
     margin-right: 0;
 
