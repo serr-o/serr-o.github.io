@@ -272,11 +272,6 @@ a:hover, a:visited, a:link, a:active {
     font-size: 22px;
 }
 
-.soundtrack {
-    width: 100%;
-    margin-top: 50px;
-}
-
 
 
 .highlight:active, .highlight:hover, .highlight:link, .highlight:visited {
@@ -592,6 +587,7 @@ body {
     width: 100vw;
     left:0px;
     top: 50px;
+    right: 0;
     padding-left: 0px;
     padding-right: 0px;
     margin-right: 0;
@@ -607,27 +603,25 @@ body {
 #titulo {
     display: flex;
     flex-direction: row;
-    height: 150px;
-    width: 95%;
+    height: 42vw;
+    width: auto;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-between;
+
 }
-    
 .thumbnail {
     display: flex;
+    height: 60%;
     width: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 0;
-    margin-right: 0;
-    mix-blend-mode: multiply;
 }
 
 .thumbnail2 {
     display: flex;
+    height: 100%;
     width: auto;
-    margin-left: 0;
-    margin-right: 0;
-    mix-blend-mode: multiply;
 }
 
 
