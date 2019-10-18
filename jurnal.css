@@ -42,7 +42,7 @@ a:hover, a:visited, a:link, a:active {
     flex-direction: column;
     width: 4.76vh;
     height: 100vh;
-    z-index: 0; 
+    z-index: 10; 
     animation: disap 0.5s;
     animation-timing-function: cubic-bezier(,1,0.9,0.8);
     transition: width 0.5s;
