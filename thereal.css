@@ -432,12 +432,7 @@ a:hover, a:visited, a:link, a:active {
 body {
     flex-direction: column;
 }
-    
-.row {
-    flex-direction: column;
 
-}
- 
         
 #side_bar {
     display: flex;
@@ -591,8 +586,7 @@ body {
     margin-right: 0;
 
 }
-
-
+    
 @keyframes ape {
     0% {left: 210px;}
     100%{left: 0px;}
@@ -608,36 +602,145 @@ body {
     margin-right: auto;
     margin-top: 20px;
     z-index: -2;
+    width: 90%;
     
 }
-
+    
 .intro {
     width: 90%;
     letter-spacing: 0.2px;
     height: auto;
     margin-top: 20px;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     margin-left: 17.5px;
 }
     
-.top {
-    display: block;
+    
+
+.description {
+    width: 90%;
+    height: auto;
+    margin-top: 30px;
+    font-size: 18px;
     margin-bottom: 20px;
-    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
 }
-   
+
+.legenda {
+    width: 90%;
+    height: auto;
+    margin-top: 0px;
+    font-size: 18px;
+    margin-bottom: 0px;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.legenda2 {
+    width: 90%;
+    height: auto;
+    margin-top: 0px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.imgfull{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.site {
+    box-shadow: 0px 0px 30px 5px
+}
+
+#conseq_contentor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#cartas_contentor {
+    display: flex;
+    flex-direction: column;
+    width:100%;  
+    height: auto;
+    overflow: hidden;
+    margin-top: -20px;
+    margin-bottom: 20px;
+
+}
+.cartas {
+    display: flex;
+    position: relative;
+    width:110%;
+    margin-left: -5%;
+    margin-right: -5%;    
+}
+.nav_cont {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    height: 20px;
+    width: 100%;
+    margin-top: -10px;
+    margin-bottom: auto;
+}
+.nav_button {
+    display: flex;
+    position: relative;
+    height: 100%;
+}
+
+.front {content:url(vetores/frontho.svg);}
+    .back {content:url(vetores/backho.svg);}
+
+.nav_button:hover {
+    opacity: 0.5;
+}
+
+.nav_button:active {
+    opacity: 1;
+}
+.aspect-ratio {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56%;
+}
+
+#bedeo {
+    width: 100%;
+    height: 500px;
+}
+
+.aspect-ratio #bedeo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0; top: 0;
+}
+    
+    
     
 
 
-.spread {
-    display: flex;
-    width: 100%;
-    overflow: hidden;
-    margin-left: 0;
-    margin-right: 0;
-    opacity: 1;
-}
+
+
     
 
 
