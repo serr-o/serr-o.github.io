@@ -10,9 +10,7 @@
     <link rel="stylesheet" href="thereal.css">
     <link rel="icon" type="image/png" href="#"> 
   
-    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
+ <script src="jquery-3.4.1.min.js"></script>
 
 </head>
 
@@ -39,7 +37,7 @@ However, these contents can only be experienced once.</div>
             
             <img class="imgfull" src="thereal/1.jpg">
             <p class="legenda2">Discardable card container and booklet for storage of the cards.</p>
-            <img class="imgfull site" src="thereal/site.png">
+            <img class="imgfull site" src="thereal/site.jpg">
             <p class="legenda2">Website on the final section, 3 experiences have been unlocked.</p>
         
         <!-- THE REAL -->
@@ -48,13 +46,14 @@ However, these contents can only be experienced once.</div>
             <p class="description">1_ FROM THE REAL WORLD<br>
 In this stage, one can find compositions that mirror the sounds of the real world or were inspired by the organization of anything that can be perceived by our senses. Everything that is physical and epistemological.</p>
             <div id="conseq_contentor">
+                
                 <div id="cartas_contentor">
-                <img class="cartas cartar lazy" src="vetores/img.svg" data-src="thereal/cartas/therealfrentes.svg">
-                <div class="nav_cont">
-                    <img class="nav_button frontr front" src="vetores/front.svg">
-                    <div class="filler"></div>
-                    <img class="nav_button backr back" src="vetores/back.svg">
-                </div>
+                <img class="cartas cartar" src="thereal/cartas/therealfrentes.png">
+                    <div class="nav_cont">
+                        <img class="nav_button frontr front" src="vetores/front.svg">
+                       
+                        <img class="nav_button backr back" src="vetores/back.svg">
+                    </div>
                 
             </div>
             <p class="legenda">After progressing through this section, the three tracks would be played in the following page.</p>
@@ -70,10 +69,9 @@ digital world. Upon the introduction of the magnetic tape, artists
 began to explore its potential by creating electronic sounds.</p>
             <div id="conseq_contentor">
                 <div id="cartas_contentor">
-                <img class="cartas cartao lazy" src="vetores/img.svg" data-src="thereal/cartas/theotherfrentes.svg">
+                <img class="cartas cartao" src="thereal/cartas/theotherfrentes.png">
                 <div class="nav_cont">
                     <img class="nav_button fronto front" src="vetores/front.svg">
-                    <div class="filler"></div>
                     <img class="nav_button backo back" src="vetores/back.svg">
                 </div>
                 
@@ -96,10 +94,9 @@ It pushes the previous world to an extreme, going in depth into the
 most excessive expressions of the genre.</p>
             <div id="conseq_contentor">
                 <div id="cartas_contentor">
-                <img class="cartas cartau lazy" src="vetores/img.svg" data-src="thereal/cartas/theunderfrentes.svg">
+                <img class="cartas cartau" src="thereal/cartas/theunderfrentes.png">
                 <div class="nav_cont">
                     <img class="nav_button frontu front" src="vetores/front.svg">
-                    <div class="filler"></div>
                     <img class="nav_button backu back" src="vetores/back.svg">
                 </div>
                 
@@ -119,10 +116,9 @@ A reinterpretation of it. Where does noise exist beyond the obvious?
 A closer look reveals noise everywhere, even in silence.</p>
             <div id="conseq_contentor">
                 <div id="cartas_contentor">
-                <img class="cartas cartan lazy" src="vetores/img.svg" data-src="thereal/cartas/theunderfrentes.svg">
+                <img class="cartas cartan" src="thereal/cartas/thenewfrentes.png">
                 <div class="nav_cont">
                     <img class="nav_button frontn front" src="vetores/front.svg">
-                    <div class="filler"></div>
                     <img class="nav_button backn back" src="vetores/back.svg">
                 </div>
                 
@@ -148,66 +144,43 @@ A closer look reveals noise everywhere, even in silence.</p>
 </body>
 
     <script>
-   
-        
-
-    /* LAZY */
-        $(function() {
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            delay: 350,
-            effect: 'fadeIn',
-            effectTime: 000
-        });
-    });
-        
       //  
     $('.frontr').click(function(){
-    $('.cartar').attr('src', 'thereal/cartas/therealfrentes.svg');
+    $('.cartar').attr('src', 'thereal/cartas/therealfrentes.png');
         
     });
         
         $('.backr').click(function(){
-    $('.cartar').attr('src', 'thereal/cartas/therealbacks.svg');
+    $('.cartar').attr('src', 'thereal/cartas/therealbacks.png');
     });
        // 
     $('.fronto').click(function(){
-    $('.cartao').attr('src', 'thereal/cartas/theotherfrentes.svg');
+    $('.cartao').attr('src', 'thereal/cartas/theotherfrentes.png');
         
     });
         
     $('.backo').click(function(){
-    $('.cartao').attr('src', 'thereal/cartas/theotherbacks.svg');
+    $('.cartao').attr('src', 'thereal/cartas/theotherbacks.png');
     });
        // 
     $('.frontu').click(function(){
-    $('.cartau').attr('src', 'thereal/cartas/theunderfrentes.svg');
+    $('.cartau').attr('src', 'thereal/cartas/theunderfrentes.png');
         
     });
         
     $('.backu').click(function(){
-    $('.cartau').attr('src', 'thereal/cartas/theunderbacks.svg');
+    $('.cartau').attr('src', 'thereal/cartas/theunderbacks.png');
     });
        // 
     $('.frontn').click(function(){
-    $('.cartan').attr('src', 'thereal/cartas/thenewfrentes.svg');
+    $('.cartan').attr('src', 'thereal/cartas/thenewfrentes.png');
         
     });
         
     $('.backn').click(function(){
-    $('.cartan').attr('src', 'thereal/cartas/thenewbacks.svg');
+    $('.cartan').attr('src', 'thereal/cartas/thenewbacks.png');
     });
-        
-    
-        
-        
-    
-
-    
    
-        
-       
 </script>
 
     

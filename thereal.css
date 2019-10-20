@@ -245,10 +245,9 @@ a:hover, a:visited, a:link, a:active {
 .cartas {
     display: flex;
     position: relative;
-    width:120%;
-    margin-left: -5%;
-    margin-right: -5%;
-    
+    width:95%;
+    margin-left: 0;
+    margin-right: 0;
 }
 .nav_cont {
     display: flex;

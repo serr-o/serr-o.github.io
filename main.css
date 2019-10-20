@@ -165,7 +165,7 @@ a:hover, a:visited, a:link, a:active {
     position: relative;
     display: flex;
     width: 110%;
-    
+    mix-blend-mode: multiply;
 }
 
 #cast2050 {
@@ -174,13 +174,13 @@ a:hover, a:visited, a:link, a:active {
     margin-top: 20px;
     width: 90%;
     margin-left: auto;
-
+    mix-blend-mode: multiply;
 }
 
 #towards {
     position: relative;
     display: flex;
-
+    mix-blend-mode: multiply;
 }
 
 #a55 {
@@ -189,21 +189,22 @@ a:hover, a:visited, a:link, a:active {
     margin-top: 25px;
     margin-left: auto;
     width: 100%;
+    mix-blend-mode: multiply;
 }
 
 #ittakes {
     margin-top: 20px;
     position: relative;
     display: flex;
-    
+    mix-blend-mode: multiply;
 }
 
 #jurnal3 {
     margin-top: 40px;
     position: relative;
     display: flex;
-    width: 100%
-    
+    width: 100%;
+    mix-blend-mode: multiply;  
 }
 
 #jurnal4 { 
@@ -211,7 +212,7 @@ a:hover, a:visited, a:link, a:active {
     position: relative;
     width: 100%;
     margin-top: -10px;
-    
+    mix-blend-mode: multiply;
 }
 
 #thereal { 
@@ -219,7 +220,7 @@ a:hover, a:visited, a:link, a:active {
     position: relative;
     width: 100%;
     margin-top: 10px;
-    
+    mix-blend-mode: multiply;
 }
 
 /* MEDIA QUARIES */
