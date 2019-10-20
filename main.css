@@ -140,6 +140,14 @@ a:hover, a:visited, a:link, a:active {
     flex-direction: row;   
 }
 
+.row2 {
+    margin-left: 60px;
+
+}
+
+.row1 {
+}
+
 .coluna {
     display:flex;
     flex-direction: column;
@@ -157,7 +165,6 @@ a:hover, a:visited, a:link, a:active {
     display:flex;
     flex-direction: column;
     width: 35vh;
-    margin-left: 60px;
 }
 
 
@@ -187,7 +194,6 @@ a:hover, a:visited, a:link, a:active {
     position: relative;
     display: flex;
     margin-top: 25px;
-    margin-left: auto;
     width: 100%;
     mix-blend-mode: multiply;
 }
@@ -354,8 +360,10 @@ body {
     display:flex;
     flex-direction: row;
     width: 100%;
-    margin-left: auto; 
+    margin-left: 0px; 
     margin-top: 0px;
+    margin-right: auto;
+    justify-content: space-between;
 }
 
 .row1, .row2 {
@@ -367,6 +375,9 @@ body {
     
 .row2 {
     margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width:100%;
 }
     
 #cast00 {
@@ -390,16 +401,19 @@ body {
     display: flex;
 
 }
-
+    
+.a {order: 2; width: 48%;}
+.b {order: 1; width: 48%;}
+    
 #a55 {
     position: relative;
     display: flex;
     margin-top: 0px;
     margin-left: auto;
     margin-right: 0;
-    width: 90%;
+    width: 100%;
+    mix-blend-mode: normal;
 }
-.a {order: 2;}
 
 #ittakes {
     margin-top: 20px;
@@ -427,13 +441,13 @@ body {
 #thereal { 
     display: flex;
     position: relative;
-    width: 100%;
     margin-top: 0px;
     margin-left: auto;
     margin-right: 0px; 
-    
+    width: 100%;
+    mix-blend-mode: normal;
 }  
-.b {order: 1;}
+
   
 
     
