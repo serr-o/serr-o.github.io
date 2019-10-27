@@ -649,6 +649,7 @@ body {
 
 .spread {
     display: flex;
+    flex-direction: column;
     width: 100%;
     overflow: hidden;
     margin-left: auto;
@@ -657,8 +658,10 @@ body {
 }
     
 .construct {
-        width: 100%;
-    }
+    display: flex;
+    position:relative;
+    width: 100%;
+}
     
 
 .legenda {
@@ -666,7 +669,7 @@ body {
     width: 95%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 30px;
         
 }
 
