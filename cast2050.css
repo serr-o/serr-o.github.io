@@ -290,10 +290,10 @@ a:hover, a:visited, a:link, a:active {
     transform: rotate(90deg);
     color: white;
     background-color: black;
-    top: 500px;
-    right: -390px;
+    bottom: 35vh;
+    right:-315px;
     height: 80px;
-    width: 700px;
+    width: 550px;
     border-radius: 0px 0px 5px 5px; 
     align-content: flex-end;
      animation: rightape2 0.5s;
@@ -309,8 +309,8 @@ a:hover, a:visited, a:link, a:active {
 }
 
 @keyframes rightape2 {
-    0% {right: -390px;}
-    100% {right: -310px;}
+    0% {right: -315px;}
+    100% {right: -235px;}
 }
 
 .date_mm {
@@ -323,7 +323,7 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .colab_mm {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     color: white;
     width: 100%;
