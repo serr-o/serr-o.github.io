@@ -13,10 +13,7 @@ body {
     src: url(fontes/neuelight.otf);
 }
 
-@font-face {
-    font-family: medium;
-    src: url(fontes/neuemedium.otf);
-}
+
 
 body {
     width: 100%;
