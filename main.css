@@ -107,12 +107,19 @@ a:hover, a:visited, a:link, a:active {
 }
 
 
-
-
 .thumbnail {
+    display: none;
     mix-blend-mode: multiply;
     width: 100%;
     height: auto;
+    animation-name: fade;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .thumbnail:hover {

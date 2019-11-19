@@ -35,9 +35,9 @@ one can unlock exclusive contents.
 However, these contents can only be experienced once.</div>
 <br><br>
             
-            <img class="imgfull" src="thereal/1.jpg">
+            <img class="imgfull lazy" src="vetores/img.svg" data-src="thereal/1.jpg">
             <p class="legenda2">Discardable card container and booklet for storage of the cards.</p>
-            <img class="imgfull site" src="thereal/site.jpg">
+            <img class="imgfull site lazy" src="vetores/img.svg" data-src="thereal/site.jpg">
             <p class="legenda2">Website on the final section, 3 experiences have been unlocked.</p>
         
         <!-- THE REAL -->
@@ -48,11 +48,11 @@ In this stage, one can find compositions that mirror the sounds of the real worl
             <div id="conseq_contentor">
                 
                 <div id="cartas_contentor">
-                <img class="cartas cartar" src="thereal/cartas/therealfrentes.png">
+                <img class="cartas cartar lazy" src="vetores/img.svg" data-src="thereal/cartas/therealfrentes.png">
                     <div class="nav_cont">
-                        <img class="nav_button frontr front" src="vetores/front.svg">
+                        <img class="nav_button frontr front lazy" src="vetores/img.svg" data-src="vetores/front.svg">
                        
-                        <img class="nav_button backr back" src="vetores/back.svg">
+                        <img class="nav_button backr back lazy" src="vetores/img.svg" data-src="vetores/back.svg">
                     </div>
                 
             </div>
@@ -69,7 +69,7 @@ digital world. Upon the introduction of the magnetic tape, artists
 began to explore its potential by creating electronic sounds.</p>
             <div id="conseq_contentor">
                 <div id="cartas_contentor">
-                <img class="cartas cartao" src="thereal/cartas/theotherfrentes.png">
+                <img class="cartas cartao lazy" src="vetores/img.svg" data-src="thereal/cartas/theotherfrentes.png">
                 <div class="nav_cont">
                     <img class="nav_button fronto front" src="vetores/front.svg">
                     <img class="nav_button backo back" src="vetores/back.svg">
@@ -94,7 +94,7 @@ It pushes the previous world to an extreme, going in depth into the
 most excessive expressions of the genre.</p>
             <div id="conseq_contentor">
                 <div id="cartas_contentor">
-                <img class="cartas cartau" src="thereal/cartas/theunderfrentes.png">
+                <img class="cartas cartau lazy" src="vetores/img.svg" data-src="thereal/cartas/theunderfrentes.png">
                 <div class="nav_cont">
                     <img class="nav_button frontu front" src="vetores/front.svg">
                     <img class="nav_button backu back" src="vetores/back.svg">
@@ -116,7 +116,7 @@ A reinterpretation of it. Where does noise exist beyond the obvious?
 A closer look reveals noise everywhere, even in silence.</p>
             <div id="conseq_contentor">
                 <div id="cartas_contentor">
-                <img class="cartas cartan" src="thereal/cartas/thenewfrentes.png">
+                <img class="cartas cartan lazy" src="vetores/img.svg" data-src="thereal/cartas/thenewfrentes.png">
                 <div class="nav_cont">
                     <img class="nav_button frontn front" src="vetores/front.svg">
                     <img class="nav_button backn back" src="vetores/back.svg">
@@ -144,6 +144,29 @@ A closer look reveals noise everywhere, even in silence.</p>
 </body>
 
     <script>
+        
+            document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
       //  
     $('.frontr').click(function(){
     $('.cartar').attr('src', 'thereal/cartas/therealfrentes.png');

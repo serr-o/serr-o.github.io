@@ -8,11 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SERRA</title>
     <link rel="stylesheet" href="cast00.css">
-    <link rel="icon" type="image/png" href="vetores/s.png">  
-    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.10/jquery.lazy.min.js"></script>
-
+    <link rel="icon" type="image/png" href="vetores/s.png"> 
 </head>
 
 
@@ -30,16 +26,16 @@
             </div>
             <div class="contentor_colunas">
                 <div class="column1">
-                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/0.jpg">
-                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/1.jpg">
+                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/0.jpg" data-srcset="cast00/0.jpg">
+                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/1.jpg" data-srcset="cast00/1.jpg">
                 
             
             
-                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/2.jpg">
-                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/3.jpg">
+                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/2.jpg" data-srcset="cast00/2.jpg">
+                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/3.jpg" data-srcset="cast00/3.jpg">
              
                 
-                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/4.jpg">
+                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/4.jpg" data-srcset="cast00/4.jpg">
                     <div class="spread">
                     <video class="instalacao" controls>
                           <source src="cast00/instalacao.mp4" type="video/mp4">
@@ -50,19 +46,19 @@
                 </div>
             
                 <div class="column2">
-                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/6.jpg">
+                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/6.jpg" data-srcset="cast00/6.jpg">
             
           
                     
-                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/9.jpg">
-                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/5.jpg">
+                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/9.jpg" data-srcset="cast00/9.jpg">
+                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/5.jpg" data-srcset="cast00/5.jpg">
                     
-                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/7.jpg">
+                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/7.jpg" data-srcset="cast00/7.jpg">
                     
-                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/8.jpg">
+                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/8.jpg" data-srcset="cast00/8.jpg">
              
                     
-                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/cartazeflyer.jpg">
+                    <img class="lazy spread" src="vetores/img.svg" data-src="cast00/cartazeflyer.jpg" data-srcset="cast00/cartazeflyer.jpg">
             
                 </div>   
                 </div>
@@ -80,20 +76,35 @@
         <div class="date"><span class="date_mm">JAN. 2019</span></div>
     <div class="colab"><span class="date_mm">COLLABORATION WITH<br><a class="afonsoeines"  href="https://inespinheiro.com/" target="_blank">INÊS PINHEIRO</a> & <a class="afonsoeines" href="https://www.behance.net/afonsodematos">AFONSO DE MATOS</a></span></div>
 </body>
+    
+ <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
 
-    <script>
-
-
-        $(function() {
-        $('.lazy').Lazy({
-            // your configuration goes here
-            scrollDirection: 'vertical',
-            delay: 350,
-            effect: 'fadeIn',
-            effectTime: 200
-        });
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target;
+          lazyImage.src = lazyImage.dataset.src;
+          lazyImage.srcset = lazyImage.dataset.srcset;
+          lazyImage.classList.remove("lazy");
+          lazyImageObserver.unobserve(lazyImage);
+        }
+      });
     });
-</script>
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage);
+    });
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+    
+    </script>
+
+
 
     
     
