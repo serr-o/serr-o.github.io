@@ -96,13 +96,6 @@ a:hover, a:visited, a:link, a:active {
     
 }
 
-#contact {
-    color: white;
-    font-size: 6vh;
-    overflow-wrap: break-word;
-    width: 20vh;
-    mix-blend-mode: exclusion;
-}
 
 .notrans {
     display: none;
@@ -429,15 +422,13 @@ body {
 }
 
 #side_bar #about {
-       order: 4;
+       order: 3;
     }
     
 #side_bar #nome {
        order: 2;
     } 
-#side_bar #contact {
-       order: 3;
-    }
+
     
 #side_bar #background_side {
     order: 1;
@@ -452,15 +443,18 @@ body {
 }
 
     
+   
 #about {
     display: flex;
-    position: relative;
+    position: fixed;
     font-size: 8vw;
-    float: left;
     line-height: 6vw;
     width: auto;
     right: 5px;
-    top: 4px;
+    top: 6px;
+    margin: auto;
+    float: right;
+    text-align: right;
 }
     
 #contact {
