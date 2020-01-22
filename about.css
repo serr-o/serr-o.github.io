@@ -22,9 +22,9 @@ body {
     font-family:serif;
     color: black;
     font-family: light;
-    background: radial-gradient(#000000, #ffffff);
+  /*  background: radial-gradient(#000000, #ffffff);
     background-size: 1200% 1200%;
-    animation: AnimationName 15s alternate infinite;
+    animation: AnimationName 15s alternate infinite;*/
 }
 
 
