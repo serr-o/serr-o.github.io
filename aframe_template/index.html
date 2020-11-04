@@ -18,7 +18,7 @@
 		<a-scene vr-mode-ui="enabled: false"
 						 loading-screen="enabled: false">
 
-				<a-assets>
+				<a-assets timeout="10000">
 					<a-asset-item id="canto-glb" src="./models/poste.glb" response-type="arraybuffer"></a-asset-item>
 					<img id="sky" src="sky.jpg">
 					<audio id="song-mp3" src="song.mp3" preload="auto"></audio>
@@ -37,7 +37,7 @@
 				wasd-controls="acceleration:1000">
 				</a-entity>
 
-		
+
 
 	  		<a-sky src="#sky"></a-sky>
 				<a-plane color="#A0A0A0" height="50" width="50" rotation="-90 0 0"></a-plane>
