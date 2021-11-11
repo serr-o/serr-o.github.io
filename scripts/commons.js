@@ -57,7 +57,7 @@ function renderMainMenuGradientInitialOff() {
     let main = document.getElementById('main');
     var main_menu_cont = document.createElement('div');
     let page_title_anchor = document.createElement('a');
-    let page_title = document.createElement('h3'); /*antes era h1 */
+    let page_title = document.createElement('h1'); /*antes era h1 */
     var gradient_wrap = document.createElement('div');
     var gradient = document.createElement('div');
     var main_menu_items = document.createElement('div');
@@ -159,7 +159,7 @@ function renderMainMenuGradientInitialOff() {
         for (let i = 0; i < About.length; i++) {
             var container = document.createElement('div');
             container.setAttribute('id', 'container');
-            var title = document.createElement('h3'); /*antes era h1 */
+            var title = document.createElement('h1'); /*antes era h1 */
             var items = document.createElement('h3');
             
             title.innerHTML = (About[i])['title'];
@@ -311,7 +311,7 @@ function openProj(evt) {
     if ((worksArchive[i])['expo_title'] == "none"){
 
         for (let v = 0; v < (worksArchive[i])['piece'].length; v++) {
-            var title = document.createElement('h3'); /*antes era h1 */
+            var title = document.createElement('h1'); /*antes era h1 */
             title.setAttribute('id', 'title_proj');
             title.innerHTML = (worksArchive[i])['piece'][v]['title'];
             description_cont.appendChild(title);
@@ -322,7 +322,7 @@ function openProj(evt) {
         }
     }
     else {
-        var expo_title = document.createElement('h3'); /*antes era h1 */
+        var expo_title = document.createElement('h1'); /*antes era h1 */
         expo_title.setAttribute('id', 'expo_title');
         description_cont.appendChild(expo_title);
         expo_title.innerHTML = (worksArchive[i])['expo_title'];
