@@ -57,7 +57,7 @@ function renderMainMenuGradientInitialOff() {
     let main = document.getElementById('main');
     var main_menu_cont = document.createElement('div');
     let page_title_anchor = document.createElement('a');
-    let page_title = document.createElement('h1'); /*antes era h1 */
+    let page_title = document.createElement('h3'); /*antes era h1 */
     var gradient_wrap = document.createElement('div');
     var gradient = document.createElement('div');
     var main_menu_items = document.createElement('div');
