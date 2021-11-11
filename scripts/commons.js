@@ -146,10 +146,10 @@ function renderMainMenuGradientInitialOff() {
         document.body.style.backgroundColor = "#EEEEEE";
         renderMainMenuGradientInitialOff();
 
-     //   var desenho = document.createElement('img');
-    //    desenho.setAttribute('src', 'media/graphics/caracol.jpg');
-     //   desenho.setAttribute('id', 'caracol');
-    //    main.appendChild(desenho);
+        var desenho = document.createElement('img');
+        desenho.setAttribute('src', 'media/graphics/caracol.jpg');
+        desenho.setAttribute('id', 'caracol');
+        main.appendChild(desenho);
 
         var container_dad = document.createElement('div');
         container_dad.setAttribute('id', 'container_dad');
