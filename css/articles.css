@@ -1,0 +1,111 @@
+@font-face {
+    font-family: regular;
+    src: url(..\\fonts\\regular.otf);
+  }
+  
+  @font-face {
+    font-family: italic;
+    src: url(..\\fonts\\italic.otf);
+  }
+  
+  a, a:hover, a:active {
+    text-decoration: none;
+    color: #A8A8A8;
+  }
+  
+  #html {
+    width: 100vw;
+  }
+  
+  body {
+    width: 100vw;
+    color: #A8A8A8;
+    background-color: #EEEEEE;
+    font-family: regular;
+    overflow-x: hidden;
+  }
+  
+  .italic {
+    font-family: italic;
+  }
+  
+  i {
+    font-family: italic;
+  }
+  
+  h1 {
+    text-align: left;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    letter-spacing: 1px;
+    font-size: 14px;
+    max-width: 750px;
+  }
+  
+  #main {
+    margin: 0 auto;
+    width: 90%;
+    
+    position: absolute;
+    left: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #EEEEEE;
+    z-index: 1;
+  }
+
+  img {
+      height: 100%;
+      width: 70%;
+      max-width: 1400px;
+      margin-bottom: 50px;
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    
+  #main {
+    left: 10px;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    letter-spacing: 1px;
+    font-size: 16px;
+    max-width: 1000px;
+  }
+  
+
+  }
