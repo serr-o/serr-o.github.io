@@ -6,7 +6,7 @@ var worksArchive = [
             {title: "Soul House (Luís, Pia, Henrique, João, Pedro, Hugo)", description: "Hand blown crystal glass, metal coated steel. Variable Dimensions" },
             {title: "Brain Jar", description: "Tempered glass. 31 x 22 x 20cm"}
         ],
-        description: 'Views of the exhibition "Shell Game" by Andreia Santana and Anna-Sophie Berger, curated by Luiza Teixeira de Freitas at Galeria Filomena Soares, Lisbon, Portugal © João Neves',
+        description: 'Vist do meu coiso<div>ibbibibiib</div><div><i>dasdada</i></div>Views of the exhibition "Shell Game" by Andreia Santana and Anna-Sophie Berger, curated by Luiza Teixeira de Freitas at Galeria Filomena Soares, Lisbon, Portugal © João Neves',
         images: ["media/shell_game/0.jpg", "media/shell_game/1.jpg", "media/shell_game/2.jpg", "media/shell_game/3.jpg", "media/shell_game/4.jpg", "media/shell_game/5.jpg", "media/shell_game/6.jpg", "media/shell_game/7.jpg", "media/shell_game/8.jpg"],
         highlight: "media/shell_game/0.jpg"
  },
@@ -133,7 +133,7 @@ var worksArchive = [
             {title: "Inventory", description: "Dual slide projection. Variable dimensions" }
         ],
         description: 'Views of the exhibition “NOVO BANCO Revelation 2016: Andreia Santana”, Serralves Museum of Contemporary Art, Porto, 2016 <br> Photos: Filipe Braga, © Serralves Foundation, Porto',
-        images:["media/historia_da_falta_leaves_of_absence/0.jpg", "media/historia_da_falta_leaves_of_absence/1.jpg", "media/historia_da_falta_leaves_of_absence/2.jpg", "media/historia_da_falta_leaves_of_absence/3.jpg", "media/historia_da_falta_leaves_of_absence/4.jpg", "media/historia_da_falta_leaves_of_absence/5.jpg", "media/historia_da_falta_leaves_of_absence/6.jpg", "media/historia_da_falta_leaves_of_absence/7.jpg", "media/historia_da_falta_leaves_of_absence/8.jpg", "media/historia_da_falta_leaves_of_absence/9.jpg", ],
+        images:["media/historia_da_falta_leaves_of_absence/0.jpg", "media/historia_da_falta_leaves_of_absence/2.jpg", "media/historia_da_falta_leaves_of_absence/2.jpg", "media/historia_da_falta_leaves_of_absence/3.jpg", "media/historia_da_falta_leaves_of_absence/4.jpg", "media/historia_da_falta_leaves_of_absence/5.jpg", "media/historia_da_falta_leaves_of_absence/6.jpg", "media/historia_da_falta_leaves_of_absence/7.jpg", "media/historia_da_falta_leaves_of_absence/8.jpg", ],
         highlight: "media/historia_da_falta_leaves_of_absence/0.jpg"
  },
     {
@@ -153,9 +153,6 @@ var worksArchive = [
 
 var pageTitle = "Andreia Santana"
 
-// imagem inicial 
-
-var introImg = "media/intro_image/intro.png"
 
 
 var mainMenuItems = [
@@ -321,5 +318,7 @@ var Press = [
     }
 ]
 
+
+var introImg = "media/intro_image/intro.png"
 
 
