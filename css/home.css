@@ -353,14 +353,19 @@ a {
   max-width: 600px;
 }
 
-#title_proj {
+#title_piece {
   text-align: center;
   max-width: 600px;
+}
+
+#desc_piece {
+  margin-bottom: 20px;
 }
 
 .text_proj {
   text-align: center;
   max-width: 600px;
+  margin-bottom: 20px;
 }
 
 #zigzag, #caracol, #boing {
@@ -418,13 +423,13 @@ a {
   }
   h1 {
     text-align: center;
-    font-size: 14px;
+    font-size: 16px;
   }
   h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
   h3 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 18px;
   }
   a {
@@ -447,6 +452,7 @@ a {
     height: 90px;
     width: 100vw;
     bottom: 0px;
+    padding-bottom: 15px;
     left: 0px;
     pointer-events: none;
   }

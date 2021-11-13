@@ -312,11 +312,11 @@ function openProj(evt) {
 
         for (let v = 0; v < (worksArchive[i])['piece'].length; v++) {
             var title = document.createElement('h1'); /*antes era h1 */
-            title.setAttribute('id', 'title_proj');
+            title.setAttribute('id', 'title_piece');
             title.innerHTML = (worksArchive[i])['piece'][v]['title'];
             description_cont.appendChild(title);
             var desc_piece = document.createElement('h3');
-            desc_piece.setAttribute('id', 'title_proj');
+            desc_piece.setAttribute('id', 'desc_piece');
             description_cont.appendChild(desc_piece);
             desc_piece.innerHTML = (worksArchive[i])['piece'][v]['description'];
         }
@@ -329,31 +329,29 @@ function openProj(evt) {
 
         for (let v = 0; v < (worksArchive[i])['piece'].length; v++) {
             var title = document.createElement('h3');
-            title.setAttribute('id', 'title_proj');
+            title.setAttribute('id', 'title_piece');
             description_cont.appendChild(title);
             title.innerHTML = (worksArchive[i])['piece'][v]['title'];
     
             var desc_piece = document.createElement('h3');
-            desc_piece.setAttribute('id', 'title_proj');
+            desc_piece.setAttribute('id', 'desc_piece');
             description_cont.appendChild(desc_piece);
             desc_piece.innerHTML = (worksArchive[i])['piece'][v]['description'];
         }
-    } 
-    
-    /* CARREGAR ANO */
-
-    var year = document.createElement('h3');
-    year.setAttribute('class', 'text_proj');
-    description_cont.appendChild(year);
-    year.innerHTML = (worksArchive[i])['year'];
-
-    
+    }    
 
     /*CARREGAR DESCRIÇÃO GERAL*/
     var description = document.createElement('h3');
     description.setAttribute('class', 'text_proj');
     description_cont.appendChild(description);
     description.innerHTML = (worksArchive[i])['description'];
+
+    /* CARREGAR ANO */
+
+    var year = document.createElement('h3');
+    year.setAttribute('class', 'text_proj');
+    description_cont.appendChild(year);
+    year.innerHTML = (worksArchive[i])['year'];
 
 
     // contentor grande e render do contentor das imagens
