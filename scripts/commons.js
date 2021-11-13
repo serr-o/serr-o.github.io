@@ -3,7 +3,8 @@ function renderIntroImg() {
     renderMainMenuGradientInitialOn();
     var intro_img_anchor = document.createElement('a');
     var intro_img = document.createElement('img');
-    main.appendChild(intro_img_anchor);
+    var gradient_wrap = document.getElementById('gradient_wrap_always_on');
+    gradient_wrap.appendChild(intro_img_anchor);
     intro_img_anchor.appendChild(intro_img);
     intro_img.setAttribute('id', 'intro_image');
     intro_img.setAttribute('src', introImg);
@@ -262,7 +263,7 @@ function renderHome() {
         if ((worksArchive[i])['expo_title'] == ""){
             
             for (let n = 0; n < (worksArchive[i])['piece'].length; n++) {
-            var title = document.createElement('h3');
+            var title = document.createElement('h3'); 
             title.setAttribute('id', i);
             title.setAttribute('class', 'title');
             mosaic_cont.appendChild(title);
@@ -311,7 +312,7 @@ function openProj(evt) {
     if ((worksArchive[i])['expo_title'] == "none"){
 
         for (let v = 0; v < (worksArchive[i])['piece'].length; v++) {
-            var title = document.createElement('h1'); /*antes era h1 */
+            var title = document.createElement('h1'); // antes era h3
             title.setAttribute('id', 'title_piece');
             title.innerHTML = (worksArchive[i])['piece'][v]['title'];
             description_cont.appendChild(title);
@@ -328,7 +329,7 @@ function openProj(evt) {
         expo_title.innerHTML = (worksArchive[i])['expo_title'];
 
         for (let v = 0; v < (worksArchive[i])['piece'].length; v++) {
-            var title = document.createElement('h3');
+            var title = document.createElement('h1'); // antes era h3
             title.setAttribute('id', 'title_piece');
             description_cont.appendChild(title);
             title.innerHTML = (worksArchive[i])['piece'][v]['title'];

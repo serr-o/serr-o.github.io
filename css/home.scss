@@ -8,12 +8,6 @@
     src: url(../fonts/italic.otf);
 }
 
-
-a, a:hover, a:active {
-    text-decoration: none;
-    color: #A8A8A8;
-}
-
 #html {
     width: 100vw;
     height: 100vh;
@@ -59,13 +53,20 @@ p {
   /*  letter-spacing: 0.5px;*/
 }
 
+
 a {
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 0px;
     margin-top: 6px;
     font-weight: 600;
+    text-decoration: none;
+    color: #A8A8A8;
   /*  letter-spacing: 0.5px;*/
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #main {
@@ -203,7 +204,7 @@ a {
     align-items: center;
     width: 50vw;
     height: 100px;
-    margin-left: 22.5vw;
+    margin-left: 24vw;
     margin-right: auto;
     margin-top: -75px;
     pointer-events: none;
@@ -278,6 +279,10 @@ a {
 
 }
 
+.img_proj {
+    cursor: zoom-in;
+}
+
 #dark_back {
     position: fixed;
     display: flex;
@@ -298,6 +303,7 @@ a {
     max-height: 100vh;
     margin-left: auto;
     margin-right: auto;
+    cursor: zoom-out;
 }
 
 #description_cont {
@@ -349,7 +355,11 @@ a {
 }
 
 #container_dad {
+    display: flex;
+    flex-direction: column;
     width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
     padding-bottom: 100px;
     margin-top: 80px;
 }
