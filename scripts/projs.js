@@ -6,8 +6,8 @@ var worksArchive = [
             {title: "Soul House (Luís, Pia, Henrique, João, Pedro, Hugo)", description: "Hand blown crystal glass, metal coated steel. Variable Dimensions" },
             {title: "Brain Jar", description: "Tempered glass. 31 x 22 x 20cm"}
         ],
-        description: 'Vist do meu coiso<div>ibbibibiib</div><div><i>dasdada</i></div>Views of the exhibition "Shell Game" by Andreia Santana and Anna-Sophie Berger, curated by Luiza Teixeira de Freitas at Galeria Filomena Soares, Lisbon, Portugal © João Neves',
-        images: ["media/shell_game/0.jpg", "media/shell_game/1.jpg", "media/shell_game/2.jpg", "media/shell_game/3.jpg", "media/shell_game/4.jpg", "media/shell_game/5.jpg", "media/shell_game/6.jpg", "media/shell_game/7.jpg", "media/shell_game/8.jpg"],
+        description: 'Views of the exhibition "Shell Game" by Andreia Santana and Anna-Sophie Berger, curated by Luiza Teixeira de Freitas at Galeria Filomena Soares, Lisbon, Portugal © João Neves',
+        image: ["media/shell_game/0.jpg", "media/shell_game/1.jpg", "media/shell_game/2.jpg", "media/shell_game/3.jpg", "media/shell_game/4.jpg", "media/shell_game/5.jpg", "media/shell_game/6.jpg", "media/shell_game/7.jpg", "media/shell_game/8.jpg"],
         highlight: "media/shell_game/0.jpg"
  },
     {
@@ -17,7 +17,7 @@ var worksArchive = [
             {title: "Soul House (Luís, Pia, Margarida, Henrique, João, Pedro, Vasco)", description: "Hand blown crystal glass, metal coated steel. Variable Dimensions" },
         ],
         description: 'Views of the exhibition "The Skull of the Haunted Snail" by Andreia Santana, curated by Bruno Leitão at Hangar, Lisbon, Portugal © Bruno Lopes',
-        images: ["media/the_skull_of_the_haunted_snail/0.jpg", "media/the_skull_of_the_haunted_snail/1.jpg", "media/the_skull_of_the_haunted_snail/2.jpg", "media/the_skull_of_the_haunted_snail/3.jpg", "media/the_skull_of_the_haunted_snail/4.jpg", "media/the_skull_of_the_haunted_snail/5.jpg", "media/the_skull_of_the_haunted_snail/6.jpg", "media/the_skull_of_the_haunted_snail/7.jpg", "media/the_skull_of_the_haunted_snail/8.jpg", "media/the_skull_of_the_haunted_snail/9.jpg", "media/the_skull_of_the_haunted_snail/10.jpg"],
+        image: ["media/the_skull_of_the_haunted_snail/0.jpg", "media/the_skull_of_the_haunted_snail/1.jpg", "media/the_skull_of_the_haunted_snail/2.jpg", "media/the_skull_of_the_haunted_snail/3.jpg", "media/the_skull_of_the_haunted_snail/4.jpg", "media/the_skull_of_the_haunted_snail/5.jpg", "media/the_skull_of_the_haunted_snail/6.jpg", "media/the_skull_of_the_haunted_snail/7.jpg", "media/the_skull_of_the_haunted_snail/8.jpg", "media/the_skull_of_the_haunted_snail/9.jpg", "media/the_skull_of_the_haunted_snail/10.jpg"],
         highlight: "media/the_skull_of_the_haunted_snail/tiny.jpg"
    },  
     {
@@ -28,7 +28,7 @@ var worksArchive = [
             {title: "", description: "Electrical zinc coating on laser cut steel, copper and sound installation (Francisco Antão).Variable dimensions." },
         ],
         description: 'Views of the exhibition "Sonic Materialities" by Andreia Santana, curated by Marta Espiridião at ARTES, Porto, Portugal © Dinis Santos',
-        images: ["media/sonic_materialities/0.jpg", "media/sonic_materialities/1.jpg", "media/sonic_materialities/2.jpg", "media/sonic_materialities/3.jpg", "media/sonic_materialities/4.jpg", "media/sonic_materialities/5.jpg", "media/sonic_materialities/6.jpg", "media/sonic_materialities/7.jpg"],
+        image: ["media/sonic_materialities/0.jpg", "media/sonic_materialities/1.jpg", "media/sonic_materialities/2.jpg", "media/sonic_materialities/3.jpg", "media/sonic_materialities/4.jpg", "media/sonic_materialities/5.jpg", "media/sonic_materialities/6.jpg", "media/sonic_materialities/7.jpg"],
         highlight: "media/sonic_materialities/0.jpg"
  },
     {
@@ -39,7 +39,7 @@ var worksArchive = [
             {title: "", description: "Iron and extensor with galvanized coating. 240 x 65 cm" }
         ],
         description: 'Views of the exhibition "Mist" by Andreia Santana, curated by Alberta Romano at Travessa da Ermida, Lisbon, Portugal © Bruno Lopes',
-        images: ["media/mist/0.jpg", "media/mist/1.jpg", "media/mist/2.jpg", "media/mist/3.jpg",],
+        image: ["media/mist/0.jpg", "media/mist/1.jpg", "media/mist/2.jpg", "media/mist/3.jpg",],
         highlight: "media/mist/0.jpg"
  },
     {
@@ -49,7 +49,7 @@ var worksArchive = [
             {title: "", description: "Edition of 55 laser cut brass earrings. Variable shapes and dimensions. Orders and info please contact andreiaapsantana@gmail.com <br> © Supermala.europe <br> © Beatriz Pereira" }
         ],
         description: 'Views of the exhibition "Mist" by Andreia Santana, curated by Alberta Romano at Travessa da Ermida, Lisbon, Portugal © Bruno Lopes',
-        images: ["media/flights_into_yesterday/0.jpg", "media/flights_into_yesterday/1.jpg", "media/flights_into_yesterday/2.jpg", "media/flights_into_yesterday/3.jpg", "media/flights_into_yesterday/4.jpg",],
+        image: ["media/flights_into_yesterday/0.jpg", "media/flights_into_yesterday/1.jpg", "media/flights_into_yesterday/2.jpg", "media/flights_into_yesterday/3.jpg", "media/flights_into_yesterday/4.jpg",],
         highlight: "media/flights_into_yesterday/0.jpg"
  },
     {
@@ -61,7 +61,7 @@ var worksArchive = [
             {title: "Vessel (#1,2,3)", description: "Copper. 122x83 cm" }
         ],
         description: 'Views of the exhibition "Hollow Hands" by Andreia Santana at Spazio Leonardo, Generali. Milan, Italy © Cosimo Filippini',
-         images: ["media/hollow_hands/0.jpg", "media/hollow_hands/1.jpg", "media/hollow_hands/2.jpg", "media/hollow_hands/3.jpg", "media/hollow_hands/4.jpg", "media/hollow_hands/5.jpg", "media/hollow_hands/6.jpg", "media/hollow_hands/7.jpg", "media/hollow_hands/8.jpg", "media/hollow_hands/9.jpg", ],
+         image: ["media/hollow_hands/0.jpg", "media/hollow_hands/1.jpg", "media/hollow_hands/2.jpg", "media/hollow_hands/3.jpg", "media/hollow_hands/4.jpg", "media/hollow_hands/5.jpg", "media/hollow_hands/6.jpg", "media/hollow_hands/7.jpg", "media/hollow_hands/8.jpg", "media/hollow_hands/9.jpg", ],
         highlight: "media/hollow_hands/0.jpg"
 },
     {
@@ -71,7 +71,7 @@ var worksArchive = [
             {title: "", description: "Copper and sonorized metal structures. Installation with variable dimensions." },
         ],
         description: 'Views of the exhibition "Rumble Strip" by Andreia Santana at ArtWorks in cooperation w/ Tiago Ângelo (Sonoscopia). © Bruno Lança.',
-        images: ["media/rumble_strip/0.jpg", "media/rumble_strip/1.jpg", "media/rumble_strip/2.jpg", "media/rumble_strip/3.jpg", "media/rumble_strip/4.jpg", "media/rumble_strip/5.jpg", "media/rumble_strip/6.jpg", "media/rumble_strip/7.jpg", "media/rumble_strip/8.jpg", "media/rumble_strip/9.jpg", ],
+        image: ["media/rumble_strip/0.jpg", "media/rumble_strip/1.jpg", "media/rumble_strip/2.jpg", "media/rumble_strip/3.jpg", "media/rumble_strip/4.jpg", "media/rumble_strip/5.jpg", "media/rumble_strip/6.jpg", "media/rumble_strip/7.jpg", "media/rumble_strip/8.jpg", "media/rumble_strip/9.jpg", ],
         highlight: "media/rumble_strip/0.jpg"
  },
     {
@@ -81,7 +81,7 @@ var worksArchive = [
             {title: "", description: "Steel and paint. Variable dimensions" },
         ],
         description: 'Views of the exhibition “The Outcast Manufacturers”, Galeria Filomena Soares, Lisboa, 2018 © Francisco Ferreira and Galeria Filomena Soares',
-        images: ["media/the_outcast_manufacturers/0.jpg", "media/the_outcast_manufacturers/1.jpg", "media/the_outcast_manufacturers/2.jpg", "media/the_outcast_manufacturers/3.jpg", "media/the_outcast_manufacturers/4.jpg", "media/the_outcast_manufacturers/5.jpg", "media/the_outcast_manufacturers/6.jpg", "media/the_outcast_manufacturers/7.jpg", "media/the_outcast_manufacturers/8.jpg", "media/the_outcast_manufacturers/9.jpg", ],
+        image: ["media/the_outcast_manufacturers/0.jpg", "media/the_outcast_manufacturers/1.jpg", "media/the_outcast_manufacturers/2.jpg", "media/the_outcast_manufacturers/3.jpg", "media/the_outcast_manufacturers/4.jpg", "media/the_outcast_manufacturers/5.jpg", "media/the_outcast_manufacturers/6.jpg", "media/the_outcast_manufacturers/7.jpg", "media/the_outcast_manufacturers/8.jpg", "media/the_outcast_manufacturers/9.jpg", ],
         highlight: "media/the_outcast_manufacturers/0.jpg"
  },
     {
@@ -92,7 +92,7 @@ var worksArchive = [
             {title: "Rigatino", description: "Five brass elements. 50 cm x 50 cm" }
         ],
         description: 'Exhibition views from ‘The Lobster Loop’ © MONITOR Gallery <br> Photo: Photodocumenta',
-        images: ["media/tratteggio_rigatino/0.jpg", "media/tratteggio_rigatino/1.jpg", "media/tratteggio_rigatino/2.jpg", ],
+        image: ["media/tratteggio_rigatino/0.jpg", "media/tratteggio_rigatino/1.jpg", "media/tratteggio_rigatino/2.jpg", ],
         highlight: "media/tratteggio_rigatino/tiny.jpg"
  }, 
     {
@@ -102,7 +102,7 @@ var worksArchive = [
             {title: "Barter", description: "Metal plates. 210 cm x 60 cm x 3mm" }
         ],
         description: 'Exhibition views from “10000 Years After Between Venus and Mars”, Curated by João Laia Galeria Municipal do Porto, Porto, 2017 © Dinis Santos_CMP',
-        images: ["media/barter/0.jpg", "media/barter/1.jpg",],
+        image: ["media/barter/0.jpg", "media/barter/1.jpg",],
         highlight: "media/barter/0.jpg"
 },
     {
@@ -112,7 +112,7 @@ var worksArchive = [
             {title: "New Skin, Old Stone", description: "Metal curtains and slide projection. Installation w/ variable dimensions" }
         ],
         description: 'Exhibition views from “10000 Years After Between Venus and Mars”, Curated by João Laia, Galeria Municipal do Porto, Porto, 2017 © Dinis Santos_CMP',
-        images: ["media/new_skin_old_stone/0.jpg", "media/new_skin_old_stone/1.jpg", "media/new_skin_old_stone/2.jpg", "media/new_skin_old_stone/3.jpg",],
+        image: ["media/new_skin_old_stone/0.jpg", "media/new_skin_old_stone/1.jpg", "media/new_skin_old_stone/2.jpg", "media/new_skin_old_stone/3.jpg",],
         highlight: "media/new_skin_old_stone/0.jpg"
 },
     {
@@ -122,7 +122,7 @@ var worksArchive = [
             {title: "Dating The Future", description: "Film stills. HD and 16mm transferred to HD. Color. Sound. 16:9. 14’24’’" }
         ],
         description: 'Views of the exhibition "Cultivated Memory : Archeologies of the Imagined". Peninsula Gallery. New York, US',
-        images:["media/dating_the_future/0.jpg", "media/dating_the_future/1.jpg", "media/dating_the_future/2.jpg", "media/dating_the_future/3.jpg", "media/dating_the_future/4.jpg", "media/dating_the_future/5.jpg", "media/dating_the_future/6.jpg", "media/dating_the_future/7.jpg", "media/dating_the_future/8.jpg", "media/dating_the_future/9.jpg", ],
+        image:["media/dating_the_future/0.jpg", "media/dating_the_future/1.jpg", "media/dating_the_future/2.jpg", "media/dating_the_future/3.jpg", "media/dating_the_future/4.jpg", "media/dating_the_future/5.jpg", "media/dating_the_future/6.jpg", "media/dating_the_future/7.jpg", "media/dating_the_future/8.jpg", "media/dating_the_future/9.jpg", ],
         highlight: "media/dating_the_future/0.jpg"
  },
     {
@@ -133,7 +133,7 @@ var worksArchive = [
             {title: "Inventory", description: "Dual slide projection. Variable dimensions" }
         ],
         description: 'Views of the exhibition “NOVO BANCO Revelation 2016: Andreia Santana”, Serralves Museum of Contemporary Art, Porto, 2016 <br> Photos: Filipe Braga, © Serralves Foundation, Porto',
-        images:["media/historia_da_falta_leaves_of_absence/0.jpg", "media/historia_da_falta_leaves_of_absence/2.jpg", "media/historia_da_falta_leaves_of_absence/2.jpg", "media/historia_da_falta_leaves_of_absence/3.jpg", "media/historia_da_falta_leaves_of_absence/4.jpg", "media/historia_da_falta_leaves_of_absence/5.jpg", "media/historia_da_falta_leaves_of_absence/6.jpg", "media/historia_da_falta_leaves_of_absence/7.jpg", "media/historia_da_falta_leaves_of_absence/8.jpg", ],
+        image:["media/historia_da_falta_leaves_of_absence/0.jpg", "media/historia_da_falta_leaves_of_absence/2.jpg", "media/historia_da_falta_leaves_of_absence/2.jpg", "media/historia_da_falta_leaves_of_absence/3.jpg", "media/historia_da_falta_leaves_of_absence/4.jpg", "media/historia_da_falta_leaves_of_absence/5.jpg", "media/historia_da_falta_leaves_of_absence/6.jpg", "media/historia_da_falta_leaves_of_absence/7.jpg", "media/historia_da_falta_leaves_of_absence/8.jpg", ],
         highlight: "media/historia_da_falta_leaves_of_absence/0.jpg"
  },
     {
@@ -143,10 +143,16 @@ var worksArchive = [
             {title: "Archaeological Factory", description: "Inkjet print on paper. Variable dimensions." }
         ],
         description: '',
-        images:["media/archaeological_factory/0.jpg", "media/archaeological_factory/1.jpg", "media/archaeological_factory/2.jpg", "media/archaeological_factory/3.jpg", "media/archaeological_factory/4.jpg", "media/archaeological_factory/5.jpg", ],
+        image:["media/archaeological_factory/0.jpg", "media/archaeological_factory/1.jpg", "media/archaeological_factory/2.jpg", "media/archaeological_factory/3.jpg", "media/archaeological_factory/4.jpg", "media/archaeological_factory/5.jpg", ],
         highlight: "media/archaeological_factory/0.jpg" 
 }
 
+// ░▒▓█ PASTE BELLOW HERE █▓▒░
+
+
+
+
+// ░▒▓█  PASTE ABOVE HERE █▓▒░
 ];
 
 

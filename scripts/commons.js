@@ -100,10 +100,15 @@ function renderMainMenuGradientInitialOff() {
         document.body.style.backgroundColor = "#EEEEEE";
         renderMainMenuGradientInitialOff();
 
+        var container_dad = document.createElement('div');
+        container_dad.setAttribute('id', 'container_dad');
+        main.appendChild(container_dad);
+
+
         var emailandreia = document.createElement('h3');
         emailandreia.setAttribute('id', 'emailandreia');
         emailandreia.innerHTML = (Contact[0])['email'];
-        main.appendChild(emailandreia);
+        container_dad.appendChild(emailandreia);
 
         var desenho = document.createElement('img');
         desenho.setAttribute('src', 'media/graphics/zigzag.jpg');
@@ -129,7 +134,7 @@ function renderMainMenuGradientInitialOff() {
             email.innerHTML = (Contact[i])['email'];
             website.innerHTML = (Contact[i])['website'];
 
-            main.appendChild(container);
+            container_dad.appendChild(container);
             container.appendChild(name);
             container.appendChild(schedule);
             container.appendChild(address);
@@ -362,7 +367,7 @@ function openProj(evt) {
     main.appendChild(images_cont);
     
     // definir variavel do arquivo das imagens
-    var images = (worksArchive[i])['images']
+    var images = (worksArchive[i])['image']
 
     // renderizar imagens do projeto
     for (v = 0; v < images.length; v++) {

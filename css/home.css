@@ -355,25 +355,30 @@ a:hover {
   height: 600px;
   margin-top: 30px;
   right: 0;
+  z-index: 50;
 }
 
 #expo_title {
   max-width: 600px;
+  cursor: text;
 }
 
 #title_piece {
   text-align: center;
   max-width: 600px;
+  cursor: text;
 }
 
 #desc_piece {
   margin-bottom: 20px;
+  cursor: text;
 }
 
 .text_proj {
   text-align: center;
   max-width: 600px;
   margin-bottom: 20px;
+  cursor: text;
 }
 
 #zigzag, #caracol, #boing {
@@ -649,7 +654,7 @@ a:hover {
     display: flex;
     width: auto;
     max-width: 100vw;
-    max-height: 100vw;
+    max-height: 100vh;
     margin-left: auto;
     margin-right: auto;
     left: auto;
@@ -683,6 +688,7 @@ a:hover {
     text-align: center;
   }
   #zigzag, #boing {
+    display: none;
     position: absolute;
     top: 30%;
     left: -40%;
@@ -693,8 +699,12 @@ a:hover {
     height: 90vw;
     mix-blend-mode: multiply;
     z-index: 1;
+    opacity: 0.2;
+    outline: 5px solid #EEEEEE;
+    outline-offset: -1px;
   }
   #caracol {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;

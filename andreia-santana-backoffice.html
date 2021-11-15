@@ -2062,14 +2062,19 @@
     <h3>Imagens <sup>(image)</sup></h3>
        <p>Imagens que aparecem nos projetos.</p>
        <p>Aqui nunca podes deixar um campo em branco!</p>
-       <p>1. Antes de escreveres algo aqui, deves ir à pasta do teu site, ir à pasta "media", e criar uma nova pasta onde colocarás as imagens.</p>
+       <p>1. Antes de escreveres algo aqui, deves adicionar as imagens à pasta do site.</p>
+       <p>No fundo da página deixei uma explicação de como fazer login no Cyberduck pela primeira vez!</p>
+       <p><blockquote>1.1. Abrir o Cyberduck e ir a "andreiasantana.net/media"</blockquote></p>
+       <img style="height: 500px;" src="andreia-santana-backoffice-files/media/3.png">
+       <p><blockquote>1.2. Criar uma pasta e colocar as imagens lá dentro.</blockquote></p>
+       <img style="height: 500px; margin-top: 20px;" src="andreia-santana-backoffice-files/media/4.png">
+       <img style="height: 500px; margin-top: 20px;" src="andreia-santana-backoffice-files/media/5.png">
        <p>2. Colocar as imagens desejadas dentro dessa pasta e certificar-te que estão em formato .jpg</p>
+       <p><blockquote><p><blockquote>É boa prática manter as imagens a 72dpi e com a medida mais pequena a 720px. Isto garante que o site carrega rapidamente.</blockquote></p></blockquote></p>
        <p><blockquote>2.1. Tenta dar nomes simples às imagens!<p><blockquote>Por norma demos sempre nomes a contar a partir do zero (ex: 0.jpg, 1.jpg, 2.jpg, etc.), o que as distingue das imagens de outros projetos é o facto de estarem numa pasta diferente.</blockquote></p></blockquote></p>
        <p><blockquote>2.2. Não utilizes carateres especiais nem na nomenclatura da pasta, nem das imagens e substitui espaços por underscores "_"</p></blockquote></p>
-
-
        <p>3. Carregar em "adicionar imagem" e escrever o "path" da mesma.</p>
-       <p><blockquote>Por exemplo: "media/pasta_com_imagens_do_projeto/0.jpg" (sem as quotes!)</blockquote></p>
+       <p><blockquote>Por exemplo: "media/pasta_imagens/0.jpg" (sem as quotes!)</blockquote></p>
         
 
     <div id="image">
@@ -2093,29 +2098,36 @@
     <h3>Instruções</h3>
     <p>1. Preencher com as informações desejadas.</p>
     <p>2. Fazer Download do ficheiro.</p>
-    <p>3. Copiar todo o conteúdo do ficheiro txt.</p>
-    <p>4. Go to <a href="https://github.com/coletivolamaga/lamaga-website/blob/main/scripts/data.js"
-        target="_blank">HERE</a>. Ou manualmente à página do repositório <i>"lamaga_site"</i> na pasta
-      <i>Scripts</i> ao ficheiro <i>Data.js</i>.</p>
-    <p>5. Abrir o ficheiro <i>"data.js"</i> e clicar em editar.</p>
-    <img src="andreia-santana-backoffice-files/edit_file.png">
-    <p>6. Colar o texto do ficheiro txt em cima da linha que diz: <i>"// ░▒▓█ PASTE BELLOW HERE █▓▒░"</i></p>
-    <p>(Repetir as últimas duas ações por cada coisa a inserir no site)</p>
-    <p>7. Assim que terminado clicar em <i>"Commit Changes"</i></p>
-    <img src="andreia-santana-backoffice-files/commit_changes.png">
-    <p>8. Está feito. Ter atenção que o site demora alguns minutos a atualizar, recomendo fazerem hard refresh da
-      página para irem verificando. (Windows: Ctrl + F5 / Mac: Cmnd + F5). Caso não apareça ou dê erro confirmar
-      se todas as indicações foram seguidas (especialmente Usage notes das Datas).</p>
-    <p>9. Caso haja imagens, colocar todas na pasta <i>Content</i>, bem optimizadas para Web, comprimir e evitar
-      exceder os 100kb e 1080px por imagem e 1080px do maior comprimento. Comprimir imagens é crucial para que o
-      site carrege smoothly. (Para comprimir imagens recomendo utilizar https://squoosh.app/ ou
-      https://tinypng.com/)</p>
-    <hr>
-    <p>10. Caso queiram apagar um projeto basta ir ao ficheiro, selecionar e apagar, mas ter atenção ao conteúdo a
-      ser apagado.</p>
-    <p>11. Os projetos aparecem no site pela ordem que aparecem no ficheiro ↥ (Em baixo 1º, em cima último). Caso
-      queiram trocar a ordem basta trocar no ficheiro, mas ter atenção.</p>
-    <p>12. Em caso de dúvida contactar @oi.design.di / skatelovver@gmail.com</p>
+    <p>3. Abrir o ficheiro "code.txt" e copiar todo o conteúdo do ficheiro.</p>
+    <p>4. Abrir o Cyberduck (ver explicação a baixo) e navegar para "andreiasantana.net/scripts/projs.js"</p>
+    <img style="height: 500px; margin-top: 20px;" src="andreia-santana-backoffice-files/media/6.png">
+    <p>5. Fazer right-click e selecionar "Descarregar como", gravar o ficheiro num sítio conveniente</p>
+    <img style="height: 500px; margin-top: 20px;" src="andreia-santana-backoffice-files/media/7.png">
+    <p>6. Abrir o ficheiro "projs.js" com o Text Editor e fazer scroll down até onde diz <i>"// ░▒▓█ PASTE BELLOW HERE █▓▒░"</i></p>
+    <img style="height: 500px; margin-top: 20px;" src="andreia-santana-backoffice-files/media/8.jpg">
+    <img style="height: 500px; margin-top: 20px;" src="andreia-santana-backoffice-files/media/9.jpg">
+    <p>7. Colar o texto do ficheiro code.txt entre estas linhas.</p>
+    <p>8. Gravar o ficheiro</p>
+    <p>9. Voltar ao Cyberduck e arrastar o ficheiro "projs.js" recentemente guardado para a pasta "scripts", isto substitui o ficheiro por este novo.</p>
+    <p>10. Feito! Podes fechar o Cyberduck!</p>
+
+ 
+  </section>
+
+  <section class="input_sec">
+    <h3>!!Como iniciar sessão no Cyberduck!!</h3>
+    <p>1. Carregar em "Abrir Ligação".</p>
+    <img style="height: 500px; margin-top: 20px;" src="andreia-santana-backoffice-files/media/0.jpg">
+    <p>2. Preencher com os dados. A "Porta" deve ser a 21, e o protocolo deve ser o SFTP.</p>
+    <img style="height: 500px; margin-top: 20px;" src="andreia-santana-backoffice-files/media/1.jpg">
+    <img style="height: 500px; margin-top: 20px;" src="andreia-santana-backoffice-files/media/2.png">
+    <p>3. Carregar em "Ligar"</p>
+    <img style="height: 500px; margin-top: 20px;" src="andreia-santana-backoffice-files/media/3.png">
+    <p>4. Estás dentro!</p>
+
+
+
+
   </section>
 
   <script src="andreia-santana-backoffice-files/plataforma.js"></script>

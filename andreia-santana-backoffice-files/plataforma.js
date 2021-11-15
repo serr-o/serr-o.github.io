@@ -8,7 +8,7 @@ window.onload = function () {
         var year = "year: '" + input2.value + "',\n";
         var pieces = create_parameter_2('piece', piecesCount);
         var description = "description: '" + output.value + "',\n";
-        var images = create_parameter('images', image_count);
+        var images = create_parameter('image', image_count);
         var highlight = "highlight: '" + input3.value + "'\n";
 
         var pastehere = '// ░▒▓█ PASTE BELLOW HERE █▓▒░' + "\n";
